@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 #titulo_principal {
-    background-color: #740067;
+    background-color: #e19f10;
     color: white;
     text-align: center;
     text-shadow: 
-    -1px -1px 0 black,
-     1px -1px 0 black,
+    -1px -1px 0 rgb(255, 0, 0),
+     1px -1px 0 rgb(0, 176, 156),
     -1px  1px 0 black,
-     1px  1px 0 black;
+     1px  1px 0 black; 
+     
 }
 
 .titulo_secundario {
@@ -278,3 +279,27 @@ h1{
    75%{margin-left: 0%; transform: rotate(-120deg)}
    100%{margin-left: 0%; transform: rotate(0deg)}
 } */
+
+.area-final{
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    justify-content: space-between;
+    gap: 30px; /* espaço entre texto e imagem */
+    margin-right: 20px; 
+    box-shadow:
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc,
+    0 0 40px #00ffcc; /* sombra neon */
+    text-align: center;
+}
+
+.mapas{
+    box-shadow:
+    0 0 10px #f6ff00,
+    0 0 20px #dcdc2c,
+    0 0 40px #fffc38; /* sombra neon */
+}
+
+#jogos{
+    margin: 20px;
+}
