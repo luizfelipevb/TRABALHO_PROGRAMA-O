@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Cadastro de Jogador</h1>
+
+<form>
+
+<label>Nome:</label>
+<input type="text"><br><br>
+
+<label>Email:</label>
+<input type="email"><br><br>
+
+<label>Senha:</label>
+<input type="password"><br><br>
+
+<label>Idade:</label>
+<input type="number"><br><br>
+
+<label>Cor favorita:</label>
+<input type="color"><br><br>
+
+<label>Nível:</label>
+<input type="range" min="1" max="10"><br><br>
+
+<fieldset>
+<legend>Plataforma</legend>
+<label><input type="radio" name="plataforma">PC</label>
+<label><input type="radio" name="plataforma">Console</label>
+</fieldset>
+
+<fieldset>
+<legend>Gêneros</legend>
+<label><input type="checkbox">FPS</label>
+<label><input type="checkbox">RPG</label>
+<label><input type="checkbox">MOBA</label>
+</fieldset>
+
+<select>
+<option>Casual</option>
+<option>Competitivo</option>
+</select>
+
+<textarea placeholder="Comentário"></textarea><br><br>
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+</form>
+</body>
+</html>
