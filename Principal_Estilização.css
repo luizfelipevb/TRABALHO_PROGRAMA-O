@@ -332,3 +332,24 @@ h1{
     }
 
 }
+
+.tabelalancamento{
+    margin-left: 295px;
+    list-style-image: url('img/seta_direita_vermelha.png') ;
+}
+
+#titulolancamento{
+    animation: cores 2s steps(4) infinite;
+}
+
+.Jogofavorito {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.botoes-form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
