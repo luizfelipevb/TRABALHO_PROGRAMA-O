@@ -303,3 +303,32 @@ h1{
 #jogos{
     margin: 20px;
 }
+
+.categorias{
+    animation: cores 4s ease-in-out infinite alternate;
+}
+
+/* Animação */
+@keyframes cores{
+
+    0%{
+        color: rgb(110, 101, 1);
+    }
+
+    25%{
+        color: rgba(255, 208, 0, 0.878);
+    }
+
+    50%{
+        color: rgb(225, 255, 0);
+    }
+
+    75%{
+        color: rgb(0, 0, 0);
+    }
+
+    100%{
+        color: orange;
+    }
+
+}
