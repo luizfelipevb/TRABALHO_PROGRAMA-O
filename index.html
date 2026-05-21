@@ -3,247 +3,319 @@
 
 <!-- Início do documento HTML e idioma português do Brasil -->
 <html lang="pt-br">
-  <!-- Início do cabeçalho (configurações do site, não aparece na tela) -->
+
+  <!-- Início do cabeçalho -->
   <head>
-    <!-- Título da aba do navegador -->
+
+    <!-- Título da aba -->
     <title>Games World - Principal</title>
 
-    <!-- Define o padrão de caracteres (acentos, símbolos, etc.) -->
+    <!-- Caracteres especiais -->
     <meta charset="utf-8" />
 
-    <!-- Importa o arquivo CSS externo para estilização -->
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonte retrô -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <!-- Define o ícone que aparece na aba do navegador -->
+    <!-- Ícone -->
     <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
+
   </head>
 
-  <!-- Início do corpo do site (conteúdo visível ao usuário) -->
+  <!-- Corpo do site -->
   <body>
-    <!-- Cabeçalho principal do site -->
+
+    <!-- Cabeçalho principal -->
     <header id="titulo_principal">
-      <!-- Título principal -->
-      <h1 style="font-size: 75px;">Games World</h1>
+
+      <!-- Overlay retrô -->
+      <div class="overlay"></div>
+
+      <!-- Título -->
+      <h1>Games World</h1>
 
       <!-- Subtítulo -->
       <h2>O universo dos jogos em um só lugar</h2>
 
-      <!-- Menu de navegação -->
+      <!-- Navegação -->
       <nav class="postit">
-        <!-- Link para página principal -->
+
         <a href="index.html">||Home||</a>
 
-        <!-- Link para jogos -->
         <a href="jogos.html">||Jogos||</a>
 
-        <!-- Link para ranking -->
         <a href="ranking.html">||Ranking||</a>
 
-        <!-- Link para mídia -->
         <a href="midia.html">||Mídia||</a>
 
-        <!-- Link para contato -->
-        <a href="cadastro.html">||Contato||</a>
+        <a href="formulario.html">||Contato||</a>
 
-        <!-- Link interno para seção da página -->
-        <a href="#conclusao">||Conclusão||</a>
       </nav>
+
     </header>
 
-    <br><br>
-    <!-- Conteúdo principal do site -->
+    <!-- Conteúdo principal -->
     <main>
-      <!-- Cabeçalho da seção principal -->
-      <header style="background: black; border-radius: 15px; display: grid; padding: 20px; margin: 25px;">
 
-        <!-- Informação de data de publicação -->
+      <!-- Banner principal -->
+      <header class="banner">
+
+        <!-- Data -->
         <span>Publicado no dia 19/05/2026</span>
 
-        <!-- Título secudário da página -->
-        <h3 class="titulo_secundario" style="font-size: 40px; text-align: center;">Universo Gamer</h3>
+        <!-- Título -->
+        <h3 class="titulo_secundario">
+          Universo Gamer
+        </h3>
+
+        <!-- Texto -->
+        <p >
+          Explorando nostalgia, evolução e os maiores mapas da história dos games.
+        </p>
 
       </header>
 
-      <br>
-      
-      <!-- Container que organiza o layout -->
+      <!-- Layout principal -->
       <div id="layout">
-        <!-- Área principal de conteúdo -->
-        <article>
-          <!-- Primeira seção de conteúdo -->
-          <section>
-            <!-- Título da seção -->
-            <h3 class="titulo_secundario">Origem dos Games</h3>
 
-            <!-- Parágrafo explicativo -->
+        <!-- Conteúdo -->
+        <article class="conteudo-principal">
+
+          <!-- Primeira seção -->
+          <section class="card-retro">
+
+            <h3 class="titulo_secundario">
+              Origem dos Games
+            </h3>
+
             <p>
               Os jogos eletrônicos surgiram como forma de entretenimento
               digital, evoluindo de simples gráficos pixelados para mundos
-              totalmente imersivos. A indústria gamer se tornou uma das maiores
-              do planeta.
+              totalmente imersivos.
             </p>
 
-            <!-- Parágrafo com destaque -->
             <p>
-              <em>A história dos jogos</em> mostra como a tecnologia evoluiu
-              rapidamente, criando experiências cada vez mais realistas e
-              interativas.
+              <em>
+                A história dos jogos mostra como a tecnologia evoluiu
+                rapidamente.
+              </em>
             </p>
 
-            <!-- Parágrafo comum -->
             <p>
-              Muitos jogos clássicos ainda influenciam produções modernas e são
-              considerados referência na indústria.
+              Muitos jogos clássicos ainda influenciam produções modernas
+              e são considerados referência na indústria.
             </p>
+
           </section>
 
-          <!-- Segunda seção de conteúdo -->
-          <section>
-            <!-- Título da seção -->
-            <h3 class="titulo_secundario">O significado a palavra Game</h3>
+          <!-- Segunda seção -->
+          <section class="card-retro">
 
-            <!-- Parágrafo com texto em negrito -->
+            <h3 class="titulo_secundario">
+              O significado da palavra Game
+            </h3>
+
             <p>
               A palavra <strong>"game"</strong> vem do inglês antigo
               <strong>“gamen”</strong>, que significa diversão ou brincadeira.
-              Hoje, o termo representa toda a indústria de jogos digitais.
             </p>
 
-            <!-- Parágrafo explicativo -->
             <p>
-              Os primeiros jogos eletrônicos eram simples, mas abriram caminho
-              para o desenvolvimento de tecnologias complexas como realidade
-              virtual e inteligência artificial.
+              Hoje, o termo representa toda a indústria de jogos digitais
+              e experiências interativas.
             </p>
+
+            <p>
+              Os primeiros jogos eletrônicos eram simples, mas abriram
+              caminho para tecnologias complexas como realidade virtual
+              e inteligência artificial.
+            </p>
+
           </section>
+
+          <!-- Segunda seção -->
+          <section class="card-retro">
+
+            <h3 class="titulo_secundario">
+              O jogo que vai quebrar a internet mundial!
+            </h3>
+
+            <img src="https://imgs.search.brave.com/hL3Ko426CPQedaFIWLecPed3OXnblRQm8LcFteM2a4A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yb2Nr/c3RhcmFjdHUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzA1L0dUQS02LUJh/bm5pZXJlLWRhcnRp/Y2xlLUltYWdlLTEx/LTEwMDBwLXgtNTYz/cC1RdWFsaXRlLTIw/LVBpY3R1cmUtYnkt/Um9ja3N0YXItQWN0/dS5qcGc" alt="GTA VI">
+
+          </section>
+
+          <!-- Segunda seção -->
+          <section class="card-retro">
+
+            <h3 class="titulo_secundario">
+              Jogo mais vendido da história!
+            </h3>
+
+            <img src="https://imgs.search.brave.com/jlub66eqLRyD8rgjCIAGluW9s8tB6eTrBTco6iIkesI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvbWlu/ZWNyYWZ0LWhlcm9i/cmluZS1zdGV2ZS12/aWxsYWdlLXdpdGgt/bW9icy13bHVtdWZv/YjJuMzY1b2I4Lmpw/Zw" alt="Minecraft">
+
+          </section>
+
+
         </article>
 
-        <!-- Área lateral do site -->
-        <aside>
-          <!-- Título da lateral -->
-          <h3 class="titulo_secundario">Universo Gamer</h3>
+        <!-- Área lateral -->
+        <aside class="sidebar">
+          <!-- Título -->
+          <h3 class="titulo_secundario">
+            Universo Gamer
+          </h3>
 
-          <!-- Grupo de imagens -->
-          <figure style=" display: contents;">
-            <!-- Imagem GTA -->
-            <img class="mapas"
+          <!-- Galeria -->
+          <figure class="galeria">
+
+            <!-- GTA -->
+            <img
+              class="mapas"
               src="img/Gta map.png"
-              alt="mapa gta san andreas"
-              style="width: 300px; height: auto"
+              alt="Mapa GTA San Andreas"
             />
 
-            <!-- Imagem Fortnite -->
-            <img class="mapas"
+            <!-- Fortnite -->
+            <img
+              class="mapas"
               src="img/Mapa Fornite.jpg"
-              alt="mapa fornite"
-              style="width: 300px; height: auto"
+              alt="Mapa Fortnite"
             />
-            
-            <!-- Imagem Red Dead -->
-            <img class="mapas"
+
+            <!-- Red Dead -->
+            <img
+              class="mapas"
               src="img/Mapa Read dead.jpg"
-              alt="mapa read dead"
-              style="width: 460px; height: auto"
+              alt="Mapa Red Dead Redemption"
             />
 
-            <!-- Imagem CS -->
-            <img class="mapas"
+            <!-- CS -->
+            <img
+              class="mapas"
               src="img/CS DUST2.avif"
-              alt="mapa CS"
-              style="width: 300px; height: 300px"
+              alt="Mapa Dust 2"
             />
 
-            <!-- Imagem Mario -->
-            <img class="mapas"
+            <!-- Mario -->
+            <img
+              class="mapas"
               src="img/mapa mario.jpg"
-              alt="mapa mario"
-              style="width: 401px; height: 300px"
+              alt="Mapa Mario"
             />
 
-            <img class="mapas"
+            <!-- Resident Evil -->
+            <img
+              class="mapas"
               src="img/mapa resident evil 4.jpg"
-              alt="re4"
-              style="width: 533px; height: auto"
+              alt="Resident Evil 4"
             />
 
-            <img class="mapas"
+            <!-- God Of War -->
+            <img
+              class="mapas"
               src="img/GoW mapa.jpeg"
-              alt="gow"
-              style="width: 464px; height: 300px"
+              alt="Mapa God Of War"
             />
 
-            <!-- Legenda das imagens -->
+            <!-- Legenda -->
             <figcaption>
-              <em>Mapas nostalgicos do mundo dos jogos</em>
+
+              <em style="font-size: 25px; color: yellow;">
+                Mapas nostálgicos <p>do mundo dos jogos
+              </em>
+
             </figcaption>
+
           </figure>
+
         </aside>
+
       </div>
 
-      <!-- Segunda área de conteúdo -->
+      <!-- Área final -->
       <article class="area-final">
-        <!-- Seção de cosmologia -->
-        <section>
-          <!-- Título -->
-          <h3 class="titulo_secundario">Sobre os Jogos</h3>
 
-          <!-- Parágrafo com classe CSS -->
+        <!-- Sobre -->
+        <section class="postit-card">
+
+          <h3 class="titulo_secundario">
+            Sobre os Jogos
+          </h3>
+
           <p class="teste_display">
             No universo gamer, existem diversos mundos criados por
-            desenvolvedores, cada um com suas próprias regras, personagens e
-            histórias.
+            desenvolvedores.
           </p>
 
-          <!-- Parágrafo -->
           <p class="teste_display">
             Jogos modernos utilizam motores gráficos avançados para simular
             física, luz, sombras e inteligência artificial.
           </p>
 
-          <!-- Parágrafo -->
           <p class="teste_display">
             A evolução dos jogos criou experiências imersivas que conectam
-            milhões de jogadores ao redor do mundo.
+            milhões de jogadores.
           </p>
+
         </section>
 
-        <!-- Seção de conclusão -->
-        <section>
-          <!-- Título -->
-          <h3 class="titulo_secundario">Conclusão</h3>
+        <!-- Conclusão -->
+        <section class="postit-card" id="conclusao">
 
-          <!-- Texto final -->
+          <h3 class="titulo_secundario">
+            Conclusão
+          </h3>
+
           <p>
-            O universo dos jogos é uma das maiores formas de entretenimento da
-            atualidade, influenciando cultura, tecnologia e sociedade.
+            O universo dos jogos é uma das maiores formas de entretenimento
+            da atualidade, influenciando cultura, tecnologia e sociedade.
           </p>
+
         </section>
 
-        <img class="imagemfinal" src="https://imgs.search.brave.com/qV4kTAirTvc-PsobhowvPtzWqiO9-FZdmxHlbbeN3Es/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yb2Nr/c3RhcmFjdHUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzA1L0dUQS02LUJh/bm5pZXJlLWRhcnRp/Y2xlLUltYWdlLTEx/LTEwMDBwLXgtNTYz/cC1RdWFsaXRlLTIw/LVBpY3R1cmUtYnkt/Um9ja3N0YXItQWN0/dS5qcGc" alt="GtaIV">
       </article>
-      
-      <br><br>
-          <!-- Player de áudio -->
-    <audio class="audio-player" controls muted autoplay loop>
-      <!-- Fonte do áudio -->
-      <source src="audio/SNES STATION 1 HORA.mp3" type="audio/mpeg" />
-    </audio>
-  </body>
 
-  <br>
-      <!-- Rodapé do site -->
-      <footer class="rodape">
-        <!-- Linha horizontal -->
-        <hr />
+      <!-- Imagem final -->
+      <section class="imagem-destaque">
 
-        <!-- Direitos autorais -->
-        <small style="    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px  1px 0 black,
-        1px  1px 0 black;">© 2026 - Games World</small>
-      </footer>
+      </section>
+
+      <!-- Player de áudio -->
+      <section class="audio-area">
+
+        <audio class="audio-player" controls autoplay loop>
+
+          <source
+            src="audio/SNES STATION 1 HORA.mp3"
+            type="audio/mpeg"
+          />
+
+        </audio>
+
+      </section>
+
     </main>
 
-  <!-- Fim do documento HTML -->
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+      <hr />
+
+      <small>
+        © 2026 - Games World
+      </small>
+
+    </footer>
+
+  </body>
+
 </html>
