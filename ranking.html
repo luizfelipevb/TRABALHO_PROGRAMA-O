@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking - The Game Awards</title>
-    <link rel="stylesheet" href="Principal_Estilização.css">
+    <title>Ranking - JOGOS DOS ANOS</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- Define o ícone que aparece na aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
 </head>
 
 <body id="personagens">
 
     <div id="titulo_principal">
-        <h1>The Game Awards</h1>
+        <h1 style="font-size: 75px;">JOGOS DOS ANOS👑</h1>
         <h2>Ranking histórico dos jogos vencedores e indicados</h2>
 
-      <nav>
+      <!-- Menu de navegação -->
+      <nav class="postit">
         <!-- Link para página principal -->
-        <a href="Principal.html">||Home||</a>
+        <a href="index.html">||Home||</a>
 
         <!-- Link para jogos -->
         <a href="jogos.html">||Jogos||</a>
@@ -28,14 +31,26 @@
         <a href="midia.html">||Mídia||</a>
 
         <!-- Link para contato -->
-        <a href="formulario.html">||Contato||</a>
+        <a href="cadastro.html">||Contato||</a>
 
         <!-- Link interno para seção da página -->
         <a href="#conclusao">||Conclusão||</a>
       </nav>
+
+    
     </div>
 
-    <h2 class="titulo_secundario">🏆 Ranking de Jogos - The Game Awards (GOTY e categorias)</h2>
+    <br><br>
+
+      <header style="background: black; border-radius: 15px; display: grid; padding: 20px; margin: 25px;">
+
+        <!-- Informação de data de publicação -->
+        <span>Publicado no dia 19/05/2026</span>
+
+        <!-- Título secudário da página -->
+        <h2 class="titulogoty">🏆 Ranking de Jogos - The Game Awards (GOTY e categorias)</h2>
+
+      </header>
 
     <ul id="teste_estilo_lista_ul">
         <li>1997 - GoldenEye 007 (AIAS GOTY 🏆)</li>
@@ -59,7 +74,7 @@
 
     <center>PREMIAÇÃO DO THE GAME AWARDS</center>
 
-    <ul>
+    <ul style="background: black; border-radius: 30px;">
         <li>2014 - Dragon Age: Inquisition (The Game Awards GOTY 🏆)</li>
         <li>2014 - Dragon Age: Inquisition (GOTY)</li>
         <li>2015 - The Witcher 3: Wild Hunt (GOTY)</li>
@@ -103,7 +118,7 @@
     
     <br>
 
-    <h3 style="margin-left: 635px; color: yellow;">JOGOS MAIS ESPERADOS🤩</h3>
+    <h3 class="titulogoty" style="text-align: center; font-size: 50px;">JOGOS MAIS ESPERADOS🤩</h3>
 
     <!-- TABELA (OBRIGATÓRIA PARA DEIXAR COMPLETO) -->
     <table border="3" class="tabelalancamento">
@@ -152,15 +167,29 @@
     <br>
     
 
+      <br><br>
+          <!-- Player de áudio -->
+    <audio class="audio-player" controls muted autoplay loop>
+      <!-- Fonte do áudio -->
+      <source src="audio/Super Mario Bros 8 Bit.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+
+  <br>
       <!-- Rodapé do site -->
       <footer class="rodape">
         <!-- Linha horizontal -->
         <hr />
 
         <!-- Direitos autorais -->
-        <small>© 2026 - Games World | Ranking</small>
+        <small style="text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;">© 2026 - Games World</small>
       </footer>
     </main>
+
 
 </body>
 

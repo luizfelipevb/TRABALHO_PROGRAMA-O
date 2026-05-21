@@ -1,25 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogos Mais Famosos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
+  </head>
 
-    <link rel="stylesheet" href="Principal_Estilização.css">
-</head>
-
-<body>
-
+  <body>
     <div id="jogos">
-    <div id="titulo_principal">
+    <header id="titulo_principal">
+      <!-- Título principal -->
+      <h1 style="font-size: 75px;">Games World</h1>
 
-        <h1>Games World</h1>
-        <h2>Os jogos mais famosos da atualidade</h2>
+      <!-- Subtítulo -->
+      <h2>O universo dos jogos em um só lugar</h2>
 
-      <nav>
+      <!-- Menu de navegação -->
+      <nav class="postit" style="gap: 23px;">
         <!-- Link para página principal -->
-        <a href="Principal.html">||Home||</a>
+        <a href="index.html">||Home||</a>
 
         <!-- Link para jogos -->
         <a href="jogos.html">||Jogos||</a>
@@ -31,152 +32,210 @@
         <a href="midia.html">||Mídia||</a>
 
         <!-- Link para contato -->
-        <a href="formulario.html">||Contato||</a>
+        <a href="cadastro.html">||Contato||</a>
 
         <!-- Link interno para seção da página -->
         <a href="#conclusao">||Conclusão||</a>
       </nav>
+    </header>
 
-    </div>
+      <br /><br />
 
-    <main>
-
-        <header>
-            <h2 class="titulo_secundario">Jogos mais populares do mundo</h2>
-            <span>Atualizado em 19/05/2026</span>
+      <main>
+        <header
+          style="
+            background: black;
+            border-radius: 15px;
+            display: grid;
+            padding: 20px;
+            margin: 25px;
+          "
+        >
+          <span>Atualizado em 19/05/2026</span>
+          <h2 class="titulo_secundario">Jogos mais populares do mundo</h2>
         </header>
 
-        <article>
+        <br />
 
+        <div id="layout">
+          <article>
             <section>
+              <h3 class="titulo_secundario">História dos Games</h3>
 
-                <h3 class="titulo_secundario">História dos Games</h3>
+              <p class="teste_display">
+                A história dos jogos mais jogados e vendidos é dominada por
+                títulos que transcendem gerações e com grandes marcos históricos
+                até hoje, mesmo sendo lançado há anos
+              </p>
 
-                <p>
-                A história dos jogos mais jogados e vendidos é dominada por títulos que transcendem gerações e com grandes marcos históricos até hoje, mesmo sendo lançado há anos
-                </p> 
+              <p class="teste_display">
+                Exemplo Tetris liderando o ranking histórico de vendas com 520
+                milhões de unidades comercializadas desde 1984, seguido por
+                Minecraft (238 milhões) e Grand Theft Auto V (140 milhões).
+              </p>
 
-                <p>
-                Exemplo Tetris liderando o ranking histórico de vendas com 520 milhões de unidades comercializadas desde 1984, seguido por Minecraft (238 milhões) e Grand Theft Auto V (140 milhões). 
-                </p>
-
-                <p>
-                 Esses títulos representam uma mistura de franquias de mundo aberto, RPG, arcade e simuladores que definiram eras diferentes da indústria.
-                </p>
-
+              <p class="teste_display">
+                Esses títulos representam uma mistura de franquias de mundo
+                aberto, RPG, arcade e simuladores que definiram eras diferentes
+                da indústria.
+              </p>
             </section>
 
             <section>
+              <h3 class="titulo_secundario">Jogos em destaque</h3>
 
-                <h3 class="titulo_secundario">Jogos em destaque</h3>
-
-                <ol>
-                    <li>TETRIS</li>
-                    <li>GTA V</li>
-                    <li>Minecreaft</li>
-                    <li>Fortnite</li>
-                    <li>League of Legends</li>
-                </ol>
-
+              <ol class="teste_display">
+                <li>TETRIS</li>
+                <li>GTA V</li>
+                <li>Minecreaft</li>
+                <li>Fortnite</li>
+                <li>League of Legends</li>
+              </ol>
             </section>
+          </article>
 
-        </article>
+          <aside>
+            <h3 class="titulo_secundario">Vídeo em destaque</h3>
 
-        <aside>
+            <figure style="display: flex; justify-content: center;">
+              <video controls autoplay loop poster="img/capa_game.jpg">
+                <source src="videos/Lego Batman.mp4" type="video/mp4" />
+              </video>
 
-            <h3 class="titulo_secundario">Imagem em destaque</h3>
-
-            <figure>
-                <img src="img/GoW Remake.png" alt="Imagem de jogos">
-                <figcaption>
-                    <em>Um dos jogos mais aguardados...</em>
-                </figcaption>
+              <br /><br />
+              <figcaption>
+                <em>Um dos jogos recentemente lançados mais aguardado <p>LEGO Batman: Legacy of the Dark Knight é um jogo de ação e aventura em mundo aberto desenvolvido pela TT Games e publicado pela Warner Bros.  Games, anunciado oficialmente durante a Gamescom 2025. Inspirado na série Arkham e construído na Unreal Engine 5, o título marca o retorno da franquia LEGO Batman a um formato de mundo aberto expandido, com um mapa maior que o de Batman: Arkham Knight, dividido em quatro ilhas.</p></em>
+                <br />
+                <br />
+                <em>Disponivel para : PC | PLAYSTATION 5 | XBOX SERIES X/S</em>
+              </figcaption>
             </figure>
+          </aside>
+        </div>
 
-        </aside>
+<article class="area-final">
+  <section>
+    <h3 class="titulo_secundario">Tabela dos jogos</h3>
 
-        <article>
+    <table border="3" class="teste_display">
+      <tr>
+        <td>Jogo</td>
+        <td>Ano</td>
+        <td>Empresa</td>
+        <td>Faturamento</td>
+        <td>Gênero</td>
+      </tr>
 
-            <section>
+      <tr>
+        <td>GTA V</td>
+        <td>2013</td>
+        <td>Rockstar Games</td>
+        <td>8 bilhões</td>
+        <td>Mundo Aberto</td>
+      </tr>
 
-                <h3 class="titulo_secundario">Tabela dos jogos</h3>
+      <tr>
+        <td>Minecraft</td>
+        <td>2011</td>
+        <td>Mojang</td>
+        <td>3 bilhões</td>
+        <td>Sandbox</td>
+      </tr>
 
-                <table border="3">
+      <tr>
+        <td>Fortnite</td>
+        <td>2017</td>
+        <td>Epic Games</td>
+        <td>5 bilhões</td>
+        <td>Battle Royale</td>
+      </tr>
 
-                    <tr>
-                        <td>Jogo</td>
-                        <td>Ano</td>
-                        <td>Empresa</td>
-                        <td>Faturamento</td>
-                        <td>Gênero</td>
-                    </tr>
+      <tr>
+        <td>Valorant</td>
+        <td>2020</td>
+        <td>Riot Games</td>
+        <td>1 bilhão</td>
+        <td>FPS</td>
+      </tr>
+    </table>
+  </section>
 
-                    <tr>
-                        <td>GTA V</td>
-                        <td>2013</td>
-                        <td>Rockstar Games</td>
-                        <td>8 bilhões</td>
-                        <td>Mundo Aberto</td>
-                    </tr>
+  <br /><br />
 
-                    <tr>
-                        <td>Minecraft</td>
-                        <td>2011</td>
-                        <td>Mojang</td>
-                        <td>3 bilhões</td>
-                        <td>Sandbox</td>
-                    </tr>
 
-                    <tr>
-                        <td>Fortnite</td>
-                        <td>2017</td>
-                        <td>Epic Games</td>
-                        <td>5 bilhões</td>
-                        <td>Battle Royale</td>
-                    </tr>
 
-                    <tr>
-                        <td>Valorant</td>
-                        <td>2020</td>
-                        <td>Riot Games</td>
-                        <td>1 bilhão</td>
-                        <td>FPS</td>
-                    </tr>
+  <section id="conclusao">
+    <h3 class="titulo_secundario">Conclusão</h3>
 
-                </table>
+    <p class="teste_display">
+      O mercado de jogos continua crescendo e atraindo milhões de
+      jogadores diariamente em todas as plataformas.
+    </p>
 
-            </section>
+    <p class="teste_display">
+      Os games deixaram de ser apenas diversão e se tornaram parte da
+      cultura mundial.
+    </p>
+  </section>
 
-            <section id="conclusao">
 
-                <h3 class="titulo_secundario">Conclusão</h3>
+    <div class="container-imagem">
 
-                <p>
-                    O mercado de jogos continua crescendo e atraindo milhões de jogadores
-                    diariamente em todas as plataformas.
-                </p>
+    <h2 class="titulo-imagem">
+        Um grande jogo de ação vindo com tudo em REMAKE!
+    </h2>
 
-                <p>
-                    Os games deixaram de ser apenas diversão e se tornaram parte da cultura mundial.
-                </p>
+    <br>
 
-            </section>
+    
+    <img
+        class="imagemfinal"
+        src="img/GoW Remake.png"
+        alt="Imagem Final"
+    />
 
-        </article>
+      <iframe
+    width="560"
+    height="315"
+    src="https://assets.ign.com/videos/mediaconvert/2026/05/20/1920/0f3f3e78-2f6b-4c97-8a56-3a7157ee4162-1779290089.mp4"
+    title="Trailer Assassin's Creed Black Flag"
+    frameborder="0"
+    allowfullscreen
+  >
+  </iframe>
+  
+    </div>
+</article>
+
+        <br /><br />
+
+        <!-- Player de áudio -->
+        <audio class="audio-player" controls muted autoplay loop>
+          <!-- Fonte do áudio -->
+          <source
+            src="audio/Crash Bandicoot Main Theme.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+
+        <br />
 
         <footer class="rodape">
+          <hr />
 
-            <hr>
-
-            <small>
-                © 2026 - Games World | Jogos
-            </small>
-
+          <small
+            style="
+              text-shadow:
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+            "
+          >
+            © 2026 - Games World | Jogos
+          </small>
         </footer>
-
-    </main>
-
+      </main>
     </div>
-</body>
-
+  </body>
 </html>
