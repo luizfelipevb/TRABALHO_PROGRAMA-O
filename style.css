@@ -165,7 +165,7 @@ nav a:hover {
 
 #teste_estilo_lista_ol {
   /* list-style-type: upper-alpha; /*decimal - lower-roman - upper-roman - lower-greek - lower-alpha - upper-alpha - define o estilo de marcadores de listas ordenadas*/
-  list-style-image: url("img/seta_direita_vermelha.png");
+  list-style-image: url("img/grafico-de-seta.png");
   background: black;
   border-radius: 30px;
 }
@@ -191,14 +191,195 @@ li {
   position: relative;
 }
 
-.noticia {
-  border: solid 3px white;
-  width: 200px;
-  position: relative; /*Define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute e static*/
-  height: 100px;
-  overflow: auto; /*configura o comportamento de quando por exemplo um texto passa das bordas de um elemento html (da um overflow) visible/hidden/scroll/auto;*/
-  box-shadow: 3px 3px 3px 3px orange; /*Define a sombra de um elemento html de bloco*/
+/* ========================= */
+/*      ÁREA NOTÍCIAS        */
+/* ========================= */
+
+.area-noticias{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+    width: 95%;
+
+    margin: 50px auto;
+
+    padding: 20px;
 }
+
+/* ========================= */
+/*           CARD            */
+/* ========================= */
+
+.noticia{
+
+    height: 260px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    border: solid 4px orange;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    color: white;
+
+    position: relative;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+    0 0 10px orange,
+    0 0 20px rgba(255,166,0,0.5);
+
+    backdrop-filter: blur(6px);
+
+    font-family: "Roboto", sans-serif;
+}
+
+/* ========================= */
+/*        HOVER CARD         */
+/* ========================= */
+
+.noticia:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 20px white,
+    0 0 40px orange,
+    0 0 60px red;
+}
+
+/* ========================= */
+/*      SCROLL GAMER         */
+/* ========================= */
+
+.noticia::-webkit-scrollbar{
+
+    width: 10px;
+}
+
+.noticia::-webkit-scrollbar-track{
+
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 20px;
+}
+
+.noticia::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+        180deg,
+        orange,
+        yellow
+    );
+
+    border-radius: 20px;
+}
+
+.noticia::-webkit-scrollbar-thumb:hover{
+
+    background:
+    linear-gradient(
+        180deg,
+        red,
+        orange
+    );
+}
+
+/* ========================= */
+/*        CORES CARDS        */
+/* ========================= */
+
+.um{
+
+    background:
+    linear-gradient(
+        135deg,
+        #001eff,
+        #0048ff
+    );
+}
+
+.dois{
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff0000,
+        #ff5e00
+    );
+}
+
+.tres{
+
+    background:
+    linear-gradient(
+        135deg,
+        #009900,
+        #00cc66
+    );
+}
+
+/* ========================= */
+/*      TITULO CARD          */
+/* ========================= */
+
+.noticia h3{
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+    color: yellow;
+
+    text-shadow:
+    0 0 10px black;
+}
+
+/* ========================= */
+/*        TEXTO CARD         */
+/* ========================= */
+
+.noticia p{
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+/* ========================= */
+/*          TAG              */
+/* ========================= */
+
+.tag-noticia{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    background: rgba(255,255,255,0.2);
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    backdrop-filter: blur(5px);
+}
+
 
 h1 {
   animation-name: multicolor;
@@ -294,8 +475,20 @@ h1 {
 }
 
 .titulo_jogos{
+
+    font-size: 32px;
+
+    font-weight: bold;
+
     margin-bottom: 15px;
-    font-size: 22px;
+
+    line-height: 1.2;
+
+    text-align: left;
+
+    color: #111;
+
+    text-shadow: none;
 }
 
 .cards_container{
@@ -305,16 +498,42 @@ h1 {
 }
 
 .teste_display{
+
     background: #ff9f1c;
+
     width: 280px;
-    min-height: 120px;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+    min-height: 160px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 0 10px rgba(255,166,0,0.5);
+
     color: #1a1a1a;
-    font-family: Arial, sans-serif;
+
     transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
 }
+
+.teste_display p{
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+    text-align: left;
+}
+
 
 .teste_display:hover{
     transform: translateY(-5px);
@@ -1244,4 +1463,135 @@ figcaption{
 
         width: 90%;
     }
+}
+
+.apresentacao {
+  background: linear-gradient(145deg, #000000, #1a1a1a);
+  color: #ffd700;
+  border: 3px solid #ffd700;
+  border-radius: 25px;
+  padding: 30px;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloApresentacao {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 10px yellow;
+}
+
+.listaApresentacao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itemApresentacao {
+  background-color: rgba(255, 255, 0, 0.08);
+  border-left: 5px solid yellow;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.itemApresentacao:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 0, 0.15);
+}
+
+.containerApresentacao {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff176;
+}
+
+.containerDescricao {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.botaoInfo {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5);
+}
+
+.botaoInfo:hover {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px yellow;
+}
+
+.animacao img {
+
+    width: 120px;
+
+    position: relative;
+
+    animation: sonic 6s linear infinite;
+}
+
+@keyframes sonic {
+
+    /* INÍCIO */
+    0% {
+
+        left: 0;
+
+        transform: scaleX(1);
+    }
+
+    /* CHEGA NA DIREITA */
+    49% {
+
+        left: 80%;
+
+        transform: scaleX(1);
+    }
+
+    /* FLIP */
+    50% {
+
+        left: 80%;
+
+        transform: scaleX(-1);
+    }
+
+    /* VOLTA */
+    99% {
+
+        left: 0;
+
+        transform: scaleX(-1);
+    }
+
+    /* FLIP NOVAMENTE */
+    100% {
+
+        left: 0;
+
+        transform: scaleX(1);
+    }
+}
+
+.animacao{
+
+    overflow: hidden;
+
+    width: 100%;
 }

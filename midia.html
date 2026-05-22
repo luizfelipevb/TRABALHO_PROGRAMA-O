@@ -1,27 +1,482 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<title>Mídia</title>
-<link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mídia - Retro Games</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Ícone -->
+    <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
+
 </head>
 
 <body>
-<h1>Mídia de Jogos</h1>
 
-<img src="img/jogo.png" alt="Imagem de jogo">
+    <!-- CABEÇALHO -->
+    <header id="titulo_principal">
 
-<audio controls>
-    <source src="audio/musica.mp3" type="audio/mp3">
-</audio>
+        <!-- OVERLAY -->
+        <div class="overlay"></div>
 
-<video controls width="400">
-    <source src="videos/gameplay.mp4" type="video/mp4">
-</video>
+        <!-- TITULO -->
+        <h1>Retro Games World</h1>
 
-<iframe width="400" height="300"
-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
-</iframe>
+        <!-- SUBTITULO -->
+        <h2>Os maiores clássicos dos videogames</h2>
+
+        <!-- MENU -->
+        <nav class="postit">
+
+            <a href="index.html">||Home||</a>
+
+            <a href="jogos.html">||Jogos||</a>
+
+            <a href="ranking.html">||Ranking||</a>
+
+            <a href="midia.html">||Mídia||</a>
+
+            <a href="formulario.html">||Contato||</a>
+
+        </nav>
+
+    </header>
+
+    <br><br>
+
+    <!-- BANNER -->
+    <header style="background: black; border-radius: 15px; display: grid; padding: 20px; margin: 25px;">
+
+        <header class="banner">
+
+            <span>Publicado no dia 22/05/2026</span>
+
+            <h3 class="titulo_secundario">
+                Universo Retrô
+            </h3>
+
+            <p>
+                🎮 Reviva os consoles clássicos e os jogos que marcaram gerações.
+            </p>
+
+        </header>
+
+    </header>
+
+    <!-- LAYOUT -->
+    <main id="layout">
+
+        <!-- CARD RETRO -->
+        <section class="card-retro">
+
+            <h2 class="titulo_secundario">
+                História dos Arcades
+            </h2>
+
+            <p>
+                Os fliperamas dominaram os anos 80 e 90,
+                trazendo competições lendárias e experiências únicas.
+            </p>
+
+            <div class="transicao">
+
+                <p>
+                    Passe o mouse aqui para ativar o efeito animado retrô.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2 class="titulo_secundario">
+                Consoles Icônicos
+            </h2>
+
+            <ul id="teste_estilo_lista_ul">
+
+                <li>Super Nintendo</li>
+
+                <li>Mega Drive</li>
+
+                <li>PlayStation 1</li>
+
+                <li>Dreamcast</li>
+
+                <li>Atari</li>
+
+            </ul>
+
+            <br>
+
+            <ol id="teste_estilo_lista_ol">
+
+                <legend>Categorias Clássicas</legend>
+
+                <br>
+
+                <li><b class="categorias">Luta</b>: Street Fighter II || Mortal Kombat || Tekken 3</li>
+
+                <li><b class="categorias">Plataforma</b>: Mario || Sonic || Donkey Kong</li>
+
+                <li><b class="categorias">RPG</b>: Chrono Trigger || Final Fantasy VII</li>
+
+                <li><b class="categorias">Corrida</b>: Top Gear || Gran Turismo</li>
+
+            </ol>
+
+        </aside>
+
+    </main>
+
+    <!-- CARDS -->
+    <section id="jogos">
+
+        <center class="titulogoty">
+            JOGOS MAIS FAMOSOS 👑
+        </center>
+
+        <div class="cards_container">
+
+            <div class="teste_display">
+
+                <h3 class="titulo_jogos">
+                    Super Mario World
+                </h3>
+
+                <p>
+                    Um dos jogos mais importantes da história da Nintendo.
+                </p>
+
+            </div>
+
+            <div class="teste_display">
+
+                <h3 class="titulo_jogos">
+                    Sonic The Hedgehog
+                </h3>
+
+                <p>
+                    O mascote lendário da SEGA marcou os anos 90.
+                </p>
+
+            </div>
+
+            <div class="teste_display">
+
+                <h3 class="titulo_jogos">
+                    Metal Slug
+                </h3>
+
+                <p>
+                    Pixel art incrível e ação intensa nos arcades.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section class="galeria">
+
+        <figure style="background-color: purple; color: black;">
+
+            <img src="img/Mario tela.jpg" class="mapas" alt="Mario">
+
+            <figcaption>Super Mario World</figcaption>
+
+        </figure>
+
+        <figure style="background-color: purple; color: black;">
+
+            <img src="img/sonic tela.avif" class="mapas" alt="Sonic">
+
+            <figcaption>Sonic The Hedgehog</figcaption>
+
+        </figure>
+
+        <figure style="background-color: purple; color: black;">
+
+            <img src="img/metal slug tela.jpg" class="mapas" alt="Metal Slug">
+
+            <figcaption>Metal Slug</figcaption>
+
+        </figure>
+
+    </section>
+
+
+        <br>
+
+    <!-- NOTICIAS -->
+<section>
+
+    <h2 class="titulo_secundario">
+        Chuva de Notícias Gamer🎮
+    </h2>
+
+    <div class="area-noticias">
+
+        <div class="noticia um">
+
+            <span class="tag-noticia">
+                🎮 Fliperama
+            </span>
+
+            <h3>
+                Era dos Arcades
+            </h3>
+
+            <p>
+                Os fliperamas marcaram gerações nos anos 80 e 90.
+                Milhares de jogadores frequentavam os arcades
+                diariamente para disputar recordes e competir
+                em clássicos lendários.
+            </p>
+
+        </div>
+
+        <div class="noticia dois">
+
+            <span class="tag-noticia">
+                🕹️ Mercado
+            </span>
+
+            <h3>
+                Consoles Valorizando
+            </h3>
+
+            <p>
+                Consoles antigos, cartuchos raros e máquinas arcade
+                estão sendo vendidos por valores cada vez maiores
+                entre colecionadores apaixonados por games retrô.
+            </p>
+
+        </div>
+
+        <div class="noticia tres">
+
+            <span class="tag-noticia">
+                ⚡ Eventos
+            </span>
+
+            <h3>
+                Arcades Retornando
+            </h3>
+
+            <p>
+                Eventos gamers retrô estão trazendo de volta
+                os clássicos fliperamas com campeonatos,
+                máquinas restauradas e experiências nostálgicas.
+            </p>
+
+        </div>
+
+        <div class="noticia um">
+
+            <span class="tag-noticia">
+                👾 Nintendo
+            </span>
+
+            <h3>
+                Mario Faz 40 Anos
+            </h3>
+
+            <p>
+                A Nintendo anunciou novas comemorações para
+                celebrar os 40 anos do Mario com relançamentos,
+                coleções especiais e eventos mundiais.
+            </p>
+
+        </div>
+
+        <div class="noticia dois">
+
+            <span class="tag-noticia">
+                🔥 Retro Games
+            </span>
+
+            <h3>
+                Mega Drive em Alta
+            </h3>
+
+            <p>
+                O Mega Drive voltou a crescer entre colecionadores
+                graças ao aumento da nostalgia gamer e das edições
+                limitadas vendidas em eventos retrô.
+            </p>
+
+        </div>
+
+        <div class="noticia tres">
+
+            <span class="tag-noticia">
+                🎯 Competitivo
+            </span>
+
+            <h3>
+                Street Fighter
+            </h3>
+
+            <p>
+                Campeonatos de Street Fighter II continuam reunindo
+                jogadores veteranos e novos fãs apaixonados
+                pela era clássica dos fliperamas.
+            </p>
+
+        </div>
+
+        <div class="noticia um">
+
+            <span class="tag-noticia">
+                🚀 Tecnologia
+            </span>
+
+            <h3>
+                Arcades Modernos
+            </h3>
+
+            <p>
+                Novas máquinas arcade estão misturando gráficos
+                modernos com gameplay clássico para atrair
+                jogadores antigos e novas gerações.
+            </p>
+
+        </div>
+
+        <div class="noticia dois">
+
+            <span class="tag-noticia">
+                🎵 Nostalgia
+            </span>
+
+            <h3>
+                Trilhas Retrô
+            </h3>
+
+            <p>
+                Músicas 8-bit e trilhas clássicas estão voltando
+                em jogos indie modernos inspirados nos consoles
+                e arcades antigos.
+            </p>
+
+        </div>
+
+        <div class="noticia tres">
+
+            <span class="tag-noticia">
+                🏆 Ranking
+            </span>
+
+            <h3>
+                Games Mais Jogados
+            </h3>
+
+            <p>
+                Pac-Man, Metal Slug e Donkey Kong continuam
+                entre os arcades mais jogados em eventos
+                gamers internacionais.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ANIMAÇÃO -->
+    <div class="animacao">
+
+        <img src="img/Sonic correndo.jpg" alt="Foguete">
+
+    </div>
+
+    <!-- AREA FINAL -->
+    <section class="area-final">
+
+        <section id="conclusao">
+
+            <h2 class="titulo_secundario">
+                Conclusão
+            </h2>
+
+            <p>
+                Os jogos retrô continuam vivos e influenciando
+                toda a indústria gamer moderna.
+            </p>
+
+        </section>
+
+        <section>
+
+
+            <div>
+            <h2>Super Mario Bros Speed Run World</h2>
+            <iframe
+                src="/https://www.youtube.com/watch?v=Boq3ghiTKHA&pp=ygUUc3BlZWQgcnVuIG1hcmlvIGJyb3M%3D"
+                title="Video Retro">
+            </iframe>
+            </div>
+        </section>
+
+        <div class="container-imagem">
+
+            <img
+                src="img/retro-banner.jpg"
+                alt="Banner Retro"
+                class="imagemfinal">
+
+        </div>
+
+    </section>
+
+        <!-- AUDIO -->
+    <section class="audio-area">
+
+        <audio class="audio-player" controls muted autoplay loop>
+
+            <source src="audio/Super Mario Bros 8 Bit.mp3" type="audio/mpeg">
+
+        </audio>
+
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="rodape">
+
+        <hr>
+
+        <small style="text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;">
+
+            © 2026 - Retro Games World
+
+        </small>
+
+    </footer>
 
 </body>
+
 </html>
