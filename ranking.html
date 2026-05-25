@@ -1,451 +1,673 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
 
-<head>
+<html lang="pt-br"> <!-- Início do documento HTML e define o idioma como português do Brasil -->
 
-    <meta charset="UTF-8">
+<head> <!-- Área de configurações invisíveis da página -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========================= -->
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <!-- ========================= -->
 
-    <title>Mídia - Retro Games</title>
+    <meta charset="UTF-8"> <!-- Permite utilizar caracteres especiais e acentos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz a página se adaptar corretamente em celulares e tablets -->
+
+    <title>Ranking Retro Games</title> <!-- Título exibido na aba do navegador -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo -->
 
-    <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Cria conexão antecipada com servidor do Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Cria conexão com servidor das fontes externas -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet"> <!-- Importa as fontes Press Start 2P e Roboto -->
 
-    <!-- Ícone -->
-    <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
+</head> <!-- Fim do head -->
 
-</head>
+<body id="ranking"> <!-- Início da área visível do site -->
 
-<body id="impacto">
-
+    <!-- ========================= -->
     <!-- CABEÇALHO -->
-    <header id="titulo_principal">
+    <!-- ========================= -->
 
-        <!-- OVERLAY -->
-        <div class="overlay"></div>
+    <header id="titulo_principal"> <!-- Cabeçalho principal do site -->
 
-        <!-- TITULO -->
-        <h1>Retro Games World</h1>
+        <div class="overlay"></div> <!-- Camada visual usada para efeito de escurecimento/transparência -->
 
-        <!-- SUBTITULO -->
-        <h2>Os maiores clássicos dos videogames</h2>
+        <h1>Retro Games Ranking</h1> <!-- Título principal da página -->
+
+        <h2>Os jogos mais marcantes de cada geração</h2> <!-- Subtítulo do cabeçalho -->
 
         <!-- MENU -->
-        <nav class="postit">
+        <nav class="postit"> <!-- Menu de navegação -->
 
-            <a href="index.html">||Home||</a>
+            <a href="index.html">||Home||</a> <!-- Link para página inicial -->
 
-            <a href="jogos.html">||Jogos||</a>
+            <a href="jogos.html">||Jogos||</a> <!-- Link para página de jogos -->
 
-            <a href="ranking.html">||Ranking||</a>
+            <a href="ranking.html">||Ranking||</a> <!-- Link para página de ranking -->
 
-            <a href="midia.html">||Mídia||</a>
+            <a href="midia.html">||Mídia||</a> <!-- Link para página de mídia -->
+            
+            <a href="formulario.html">||Formulário||</a><!-- Link para a página de formulário -->
 
-            <a href="formulario.html">||Contato||</a>
+        </nav> <!-- Fim do menu -->
 
-        </nav>
+    </header> <!-- Fim do cabeçalho -->
 
-    </header>
-
-    <br><br>
-
+    <!-- ========================= -->
     <!-- BANNER -->
-    <header style="background: black; border-radius: 15px; display: grid; padding: 20px; margin: 25px;">
+    <!-- ========================= -->
 
-        <header class="banner">
+    <section class="banner"> <!-- Seção principal do banner -->
 
-            <span>Publicado no dia 22/05/2026</span>
-
-            <h3 class="titulo_secundario">
-                Universo Retrô
-            </h3>
-
-            <p>
-                🎮 Reviva os consoles clássicos e os jogos que marcaram gerações.
-            </p>
-
-        </header>
-
-    </header>
-
-    <!-- LAYOUT -->
-    <main id="layout">
-
-        <!-- CARD RETRO -->
-        <section class="card-retro">
-
-            <h2 class="titulo_secundario">
-                História dos Arcades
-            </h2>
-
-            <p>
-                Os fliperamas dominaram os anos 80 e 90,
-                trazendo competições lendárias e experiências únicas.
-            </p>
-
-            <div class="transicao">
-
-                <p>
-                    Passe o mouse aqui para ativar o efeito animado retrô.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-
-            <h2 class="titulo_secundario">
-                Consoles Icônicos
-            </h2>
-
-            <ul id="teste_estilo_lista_ul">
-
-                <li>Super Nintendo</li>
-
-                <li>Mega Drive</li>
-
-                <li>PlayStation 1</li>
-
-                <li>Dreamcast</li>
-
-                <li>Atari</li>
-
-            </ul>
-
-            <br>
-
-            <ol id="teste_estilo_lista_ol">
-
-                <legend>Categorias Clássicas</legend>
-
-                <br>
-
-                <li><b class="categorias">Luta</b>: Street Fighter II || Mortal Kombat || Tekken 3</li>
-
-                <li><b class="categorias">Plataforma</b>: Mario || Sonic || Donkey Kong</li>
-
-                <li><b class="categorias">RPG</b>: Chrono Trigger || Final Fantasy VII</li>
-
-                <li><b class="categorias">Corrida</b>: Top Gear || Gran Turismo</li>
-
-            </ol>
-
-        </aside>
-
-    </main>
-
-    <!-- CARDS -->
-    <section id="jogos">
-
-        <center class="titulogoty">
-            JOGOS MAIS FAMOSOS 👑
-        </center>
-
-        <div class="cards_container">
-
-            <div class="teste_display">
-
-                <h3 class="titulo_jogos">
-                    Super Mario World
-                </h3>
-
-                <p>
-                    Um dos jogos mais importantes da história da Nintendo.
-                </p>
-
-            </div>
-
-            <div class="teste_display">
-
-                <h3 class="titulo_jogos">
-                    Sonic The Hedgehog
-                </h3>
-
-                <p>
-                    O mascote lendário da SEGA marcou os anos 90.
-                </p>
-
-            </div>
-
-            <div class="teste_display">
-
-                <h3 class="titulo_jogos">
-                    Metal Slug
-                </h3>
-
-                <p>
-                    Pixel art incrível e ação intensa nos arcades.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- GALERIA -->
-    <section class="galeria">
-
-        <figure>
-
-            <img src="img/mario.jpg" class="mapas" alt="Mario">
-
-            <figcaption>Super Mario World</figcaption>
-
-        </figure>
-
-        <figure>
-
-            <img src="img/sonic.jpg" class="mapas" alt="Sonic">
-
-            <figcaption>Sonic The Hedgehog</figcaption>
-
-        </figure>
-
-        <figure>
-
-            <img src="img/metal.jpg" class="mapas" alt="Metal Slug">
-
-            <figcaption>Metal Slug</figcaption>
-
-        </figure>
-
-    </section>
-
-    <!-- NOTICIAS -->
-    <section>
+        <span>Atualizado em 2026</span> <!-- Texto pequeno indicando atualização -->
 
         <h2 class="titulo_secundario">
-            Notícias Gamer
+            Ranking dos Melhores Jogos
+        </h2> <!-- Título secundário -->
+
+        <p>
+            Uma seleção dos games mais icônicos da história dos videogames.
+        </p> <!-- Texto descritivo do banner -->
+
+    </section> <!-- Fim do banner -->
+
+    <!-- ========================= -->
+    <!-- RANKING GERAL -->
+    <!-- ========================= -->
+
+    <section id="jogos"> <!-- Seção geral dos jogos -->
+
+        <h2 class="titulogoty" style="text-align: center;"> <!-- Título centralizado -->
+            JOGOS MAIS AGUARDADOS PARA 2026👑
         </h2>
 
-        <div class="noticia um">
+        <div class="jogos-grid"> <!-- Grid que organiza os cards -->
 
-            <p>
-                Novos remakes retrô foram anunciados para 2026.
-            </p>
+            <!-- CARD -->
+            <div class="jogo-item"> <!-- Card individual -->
 
-        </div>
+                <div class="teste_display"> <!-- Área de texto do card -->
 
-        <div class="noticia dois">
+                    <h3 class="titulo_jogos">
+                        Grand Theft Auto VI (GTA 6)
+                    </h3> <!-- Nome do jogo -->
 
-            <p>
-                Consoles clássicos continuam valorizando no mercado.
-            </p>
+                    <p>
+                       Conhecido como o jogo mais esperado de todos os tempos. O anúncio da Rockstar Games elevou a expectativa a níveis estratosféricos e movimentou toda a indústria.
+                    </p> <!-- Descrição do jogo -->
 
-        </div>
+                </div> <!-- Fim da área de texto -->
 
-        <div class="noticia tres">
+                <figure class="card-imagem"> <!-- Área da imagem -->
 
-            <p>
-                Arcades estão voltando em eventos gamers.
-            </p>
+                    <img
+                        src="img/Card gta vi.jpg"
+                        class="mapas"
+                        alt="gtavi"> <!-- Imagem do GTA VI -->
 
-        </div>
+                    <figcaption>
+                        Rockstar Games
+                    </figcaption> <!-- Legenda da imagem -->
 
-    </section>
+                </figure> <!-- Fim da figura -->
 
-    <!-- TABELA -->
-    <h3 class="titulogoty" style="text-align: center; font-size: 50px;">
-        LANÇAMENTOS MAIS ESPERADOS 🤩
-    </h3>
+            </div> <!-- Fim do card -->
 
-    <table border="3" class="tabelalancamento">
+            <!-- CARD -->
+            <div class="jogo-item"> <!-- Segundo card -->
 
-        <tr id="titulolancamento">
+                <div class="teste_display"> <!-- Área textual -->
 
-            <td>Ano</td>
+                    <h3 class="titulo_jogos">
+                        Resident Evil REQUIEM
+                    </h3> <!-- Nome do jogo -->
 
-            <td>Jogo</td>
+                    <p>
+                    A história de Resident Evil: Requiem (lançado como o nono título principal da saga) se passa em outubro de 2026, cerca de 28 a 30 anos após a destruição de Raccoon City. A trama foca no terror, na sobrevivência e no combate ao bioterrorismo, alternando entre os protagonistas Grace Ashcroft e Leon S. Kennedy.
+                    </p> <!-- Descrição do jogo -->
 
-            <td>Empresa</td>
+                </div> <!-- Fim da área textual -->
 
-            <td>Categoria</td>
+                <figure class="card-imagem"> <!-- Área da imagem -->
 
-            <td>Plataformas</td>
+                    <img
+                        src="img/Card requiem.avif"
+                        class="mapas"
+                        alt="residentevil"> <!-- Imagem do Resident Evil -->
 
-        </tr>
+                    <figcaption>
+                        CAPCOM
+                    </figcaption> <!-- Nome da empresa -->
 
-        <tr>
+                </figure> <!-- Fim da figura -->
 
-            <td>2026</td>
+            </div> <!-- Fim do card -->
 
-            <td>GTA VI</td>
+            <!-- CARD -->
+            <div class="jogo-item"> <!-- Terceiro card -->
 
-            <td>Rockstar Games</td>
+                <div class="teste_display"> <!-- Área textual -->
 
-            <td>Mundo Aberto</td>
+                    <h3 class="titulo_jogos">
+                        Lego Batman
+                    </h3> <!-- Nome do jogo -->
 
-            <td>PS5 / Xbox</td>
+                    <p>
+                        LEGO Batman é uma franquia de grande sucesso que reimagina o universo do Cavaleiro das Trevas em formato de blocos de montar. Ela abrange desde os populares conjuntos físicos de construção até jogos de videogame em mundo aberto e a aclamada animação para o cinema.
+                    </p> <!-- Texto descritivo -->
 
-        </tr>
+                </div> <!-- Fim da área textual -->
 
-        <tr>
+                <figure class="card-imagem"> <!-- Área da imagem -->
 
-            <td>2026</td>
+                    <img
+                        src="img/Card batman.jpg"
+                        class="mapas"
+                        alt="batman"> <!-- Imagem do Batman -->
 
-            <td>Resident Evil 9</td>
+                    <figcaption>
+                        LEGO® Batman™
+                    </figcaption> <!-- Nome da franquia -->
 
-            <td>Capcom</td>
+                </figure> <!-- Fim da figura -->
 
-            <td>Terror</td>
+            </div> <!-- Fim do card -->
 
-            <td>PC / PS5</td>
+        </div> <!-- Fim do grid -->
 
-        </tr>
+    </section> <!-- Fim da seção jogos -->
 
-        <tr>
+    <br> <!-- Quebra de linha -->
 
-            <td>2027</td>
+    <h1 style="text-align: center; background-color: rgb(63, 6, 57); border-radius: 50px;">CATEGORIA DE JOGOS QUE EXISTEM</h1> <!-- Título das categorias -->
 
-            <td>The Witcher 4</td>
+    <!-- ========================= -->
+    <!-- CATEGORIAS -->
+    <!-- ========================= -->
 
-            <td>CD Projekt</td>
+    <section id="layout"> <!-- Área geral das categorias -->
 
-            <td>RPG</td>
-
-            <td>PC / Consoles</td>
-
-        </tr>
-
-    </table>
-
-    <br><br>
-
-    <!-- AUDIO -->
-    <section class="audio-area">
-
-        <audio class="audio-player" controls muted autoplay loop>
-
-            <source src="audio/Super Mario Bros 8 Bit.mp3" type="audio/mpeg">
-
-        </audio>
-
-    </section>
-
-    <!-- ANIMAÇÃO -->
-    <div class="animacao">
-
-        <img src="img/foguete.png" alt="Foguete">
-
-    </div>
-
-    <!-- APRESENTAÇÃO -->
-    <div class="apresentacao">
-
-        <h2 class="tituloApresentacao">
-            Sobre o Projeto
-        </h2>
-
-        <div class="listaApresentacao">
-
-            <div class="itemApresentacao">
-
-                <dt class="containerApresentacao">
-                    Tema
-                </dt>
-
-                <dd class="containerDescricao">
-                    Jogos clássicos retrô.
-                </dd>
-
-            </div>
-
-            <div class="itemApresentacao">
-
-                <dt class="containerApresentacao">
-                    Objetivo
-                </dt>
-
-                <dd class="containerDescricao">
-                    Relembrar a era dourada dos videogames.
-                </dd>
-
-            </div>
-
-            <div class="itemApresentacao">
-
-                <dt class="containerApresentacao">
-                    Estilo
-                </dt>
-
-                <dd class="containerDescricao">
-                    Visual neon arcade futurista.
-                </dd>
-
-            </div>
-
-        </div>
-
-        <a href="#" class="botaoInfo">
-            Saiba Mais
-        </a>
-
-    </div>
-
-    <!-- AREA FINAL -->
-    <section class="area-final">
-
-        <section id="conclusao">
+        <!-- RPG -->
+        <section class="card-retro"> <!-- Card da categoria RPG -->
 
             <h2 class="titulo_secundario">
-                Conclusão
-            </h2>
+                🎲 RPG
+            </h2> <!-- Nome da categoria -->
 
-            <p>
-                Os jogos retrô continuam vivos e influenciando
-                toda a indústria gamer moderna.
-            </p>
+            <ul id="teste_estilo_lista_ul"> <!-- Lista dos jogos -->
 
-        </section>
+                <li>Final Fantasy VII</li> <!-- Item da lista -->
 
-        <section>
+                <li>Chrono Trigger</li> <!-- Item da lista -->
 
-            <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Video Retro">
-            </iframe>
+                <li>The Witcher 3</li> <!-- Item da lista -->
 
-        </section>
+                <li>Skyrim</li> <!-- Item da lista -->
 
-        <div class="container-imagem">
+            </ul> <!-- Fim da lista -->
 
-            <img
-                src="img/retro-banner.jpg"
-                alt="Banner Retro"
-                class="imagemfinal">
+        </section> <!-- Fim da categoria -->
 
-        </div>
+        <!-- LUTA -->
+        <section class="card-retro"> <!-- Categoria luta -->
 
-    </section>
+            <h2 class="titulo_secundario">
+                🥊 Luta
+            </h2> <!-- Título da categoria -->
 
-    <!-- RODAPE -->
-    <footer class="rodape">
+            <ul id="teste_estilo_lista_ul"> <!-- Lista -->
 
-        <hr>
+                <li>Street Fighter II</li> <!-- Item -->
 
-        <small style="text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;">
+                <li>Mortal Kombat</li> <!-- Item -->
 
-            © 2026 - Retro Games World
+                <li>Tekken 3</li> <!-- Item -->
 
-        </small>
+                <li>King of Fighters</li> <!-- Item -->
 
-    </footer>
+            </ul> <!-- Fim da lista -->
 
-</body>
+        </section> <!-- Fim da categoria -->
 
-</html>
+        <!-- CORRIDA -->
+        <section class="card-retro"> <!-- Categoria corrida -->
+
+            <h2 class="titulo_secundario">
+                🏎️ Corrida
+            </h2> <!-- Nome da categoria -->
+
+            <ul id="teste_estilo_lista_ul"> <!-- Lista -->
+
+                <li>Top Gear</li> <!-- Item -->
+
+                <li>Gran Turismo</li> <!-- Item -->
+
+                <li>Need For Speed Underground</li> <!-- Item -->
+
+                <li>Mario Kart 64</li> <!-- Item -->
+
+            </ul> <!-- Fim da lista -->
+
+        </section> <!-- Fim da categoria -->
+
+        <!-- TERROR -->
+        <section class="card-retro"> <!-- Categoria terror -->
+
+            <h2 class="titulo_secundario">
+                👻 Terror
+            </h2> <!-- Nome da categoria -->
+
+            <ul id="teste_estilo_lista_ul"> <!-- Lista -->
+
+                <li>Resident Evil 2</li> <!-- Item -->
+
+                <li>Silent Hill</li> <!-- Item -->
+
+                <li>Outlast</li> <!-- Item -->
+
+                <li>Dead Space</li> <!-- Item -->
+
+            </ul> <!-- Fim da lista -->
+
+        </section> <!-- Fim da categoria -->
+
+    </section> <!-- Fim das categorias -->
+
+    <!-- ========================= -->
+    <!-- TABELA -->
+    <!-- ========================= -->
+
+    <h2 class="titulogoty" style="text-align: center;">
+        GOTY DOS ANOS 🏆
+    </h2> <!-- Título da tabela -->
+
+<table border="3" class="tabelalancamento"> <!-- Tabela principal -->
+
+    <tr id="titulolancamento"> <!-- Linha de títulos -->
+
+        <td>Ano</td> <!-- Coluna ano -->
+
+        <td>Jogo</td> <!-- Coluna jogo -->
+
+        <td>Empresa</td> <!-- Coluna empresa -->
+
+        <td>Categoria</td> <!-- Coluna categoria -->
+
+        <td>Nota</td> <!-- Coluna nota -->
+
+    </tr> <!-- Fim da linha de títulos -->
+
+    <tr> <!-- Linha da tabela -->
+        <td>1997</td> <!-- Ano -->
+        <td>Final Fantasy VII</td> <!-- Nome do jogo -->
+        <td>Square</td> <!-- Empresa -->
+        <td>RPG</td> <!-- Categoria -->
+        <td>10/10</td> <!-- Nota -->
+    </tr> <!-- Fim da linha -->
+
+    <tr>
+        <td>1998</td>
+        <td>The Legend of Zelda: Ocarina of Time</td>
+        <td>Nintendo</td>
+        <td>Aventura</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>1999</td>
+        <td>Silent Hill</td>
+        <td>Konami</td>
+        <td>Terror</td>
+        <td>9.8/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2000</td>
+        <td>Deus Ex</td>
+        <td>Ion Storm</td>
+        <td>RPG/Ação</td>
+        <td>9.9/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2001</td>
+        <td>Grand Theft Auto III</td>
+        <td>Rockstar Games</td>
+        <td>Mundo Aberto</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2002</td>
+        <td>Metroid Prime</td>
+        <td>Nintendo</td>
+        <td>FPS/Aventura</td>
+        <td>9.9/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2003</td>
+        <td>Star Wars: Knights of the Old Republic</td>
+        <td>BioWare</td>
+        <td>RPG</td>
+        <td>9.8/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2004</td>
+        <td>Half-Life 2</td>
+        <td>Valve</td>
+        <td>FPS</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2005</td>
+        <td>Resident Evil 4</td>
+        <td>CAPCOM</td>
+        <td>Terror/Ação</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2006</td>
+        <td>The Elder Scrolls IV: Oblivion</td>
+        <td>Bethesda</td>
+        <td>RPG</td>
+        <td>9.7/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2007</td>
+        <td>BioShock</td>
+        <td>2K Games</td>
+        <td>FPS</td>
+        <td>9.9/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2008</td>
+        <td>Grand Theft Auto IV</td>
+        <td>Rockstar Games</td>
+        <td>Mundo Aberto</td>
+        <td>9.8/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2009</td>
+        <td>Uncharted 2</td>
+        <td>Naughty Dog</td>
+        <td>Aventura</td>
+        <td>9.8/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2010</td>
+        <td>Red Dead Redemption</td>
+        <td>Rockstar Games</td>
+        <td>Ação</td>
+        <td>9.9/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2011</td>
+        <td>The Elder Scrolls V: Skyrim</td>
+        <td>Bethesda</td>
+        <td>RPG</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2012</td>
+        <td>The Walking Dead</td>
+        <td>Telltale Games</td>
+        <td>Drama</td>
+        <td>9.7/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2013</td>
+        <td>Grand Theft Auto V</td>
+        <td>Rockstar Games</td>
+        <td>Mundo Aberto</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2014</td>
+        <td>Dragon Age: Inquisition</td>
+        <td>BioWare</td>
+        <td>RPG</td>
+        <td>9.5/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2015</td>
+        <td>The Witcher 3</td>
+        <td>CD Projekt Red</td>
+        <td>RPG</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2016</td>
+        <td>Overwatch</td>
+        <td>Blizzard</td>
+        <td>FPS Online</td>
+        <td>9.6/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2017</td>
+        <td>The Legend of Zelda: Breath of the Wild</td>
+        <td>Nintendo</td>
+        <td>Aventura</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2018</td>
+        <td>God of War</td>
+        <td>Sony</td>
+        <td>Ação</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2019</td>
+        <td>Sekiro: Shadows Die Twice</td>
+        <td>FromSoftware</td>
+        <td>Souls Like</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2020</td>
+        <td>The Last of Us Part II</td>
+        <td>Naughty Dog</td>
+        <td>Drama/Ação</td>
+        <td>9.8/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2021</td>
+        <td>It Takes Two</td>
+        <td>Hazelight Studios</td>
+        <td>Cooperativo</td>
+        <td>9.7/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2022</td>
+        <td>Elden Ring</td>
+        <td>FromSoftware</td>
+        <td>RPG</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2023</td>
+        <td>Baldur's Gate 3</td>
+        <td>Larian Studios</td>
+        <td>RPG</td>
+        <td>10/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2024</td>
+        <td>Astro Bot</td>
+        <td>Team Asobi</td>
+        <td>Plataforma</td>
+        <td>9.9/10</td>
+    </tr> <!-- Linha da tabela -->
+
+    <tr>
+        <td>2025</td>
+        <td>Clair Obscur: Expedition 33</td>
+        <td>Sandfall Interactive</td>
+        <td>RPG</td>
+        <td>9.9/10</td>
+    </tr> <!-- Última linha da tabela -->
+
+</table> <!-- Fim da tabela -->
+
+    <!-- ========================= -->
+    <!-- NOTÍCIAS -->
+    <!-- ========================= -->
+
+    <section> <!-- Seção das notícias -->
+
+        <h2 class="titulo_secundario">
+            Notícias Gamer 🎮
+        </h2> <!-- Título da seção -->
+
+ <section class="retro_area_noticias"> <!-- Área das notícias -->
+
+    <div class="retro_noticia retro_um"> <!-- Primeira notícia -->
+
+        <span class="retro_tag_noticia">
+            🔥 Ranking
+        </span> <!-- Categoria da notícia -->
+
+        <h3>
+            GTA VI Liderando Hype
+        </h3> <!-- Título da notícia -->
+
+        <p>
+            O novo GTA VI já é considerado o jogo mais aguardado da década.
+        </p> <!-- Texto da notícia -->
+
+    </div> <!-- Fim da notícia -->
+
+    <div class="retro_noticia retro_dois"> <!-- Segunda notícia -->
+
+        <span class="retro_tag_noticia">
+            ⚡ Retro
+        </span> <!-- Categoria -->
+
+        <h3>
+            Arcades Retornando
+        </h3> <!-- Título -->
+
+        <p>
+            Eventos retrô estão trazendo os clássicos fliperamas.
+        </p> <!-- Texto -->
+
+    </div> <!-- Fim da notícia -->
+
+    <div class="retro_noticia retro_tres"> <!-- Terceira notícia -->
+
+        <span class="retro_tag_noticia">
+            🏆 GOTY
+        </span> <!-- Categoria -->
+
+        <h3>
+            RPGs Dominando
+        </h3> <!-- Título -->
+
+        <p>
+            Jogos RPG continuam vencendo premiações mundiais.
+        </p> <!-- Texto -->
+
+    </div> <!-- Fim da notícia -->
+
+</section> <!-- Fim da área de notícias -->
+
+    <!-- ========================= -->
+    <!-- ANIMAÇÃO -->
+    <!-- ========================= -->
+
+    <div class="animacao"> <!-- Área da animação -->
+
+        <img
+            src="img/Goku voando.png"
+            alt="Goku voando"> <!-- Imagem do Goku -->
+
+    </div> <!-- Fim da animação -->
+
+    <!-- ========================= -->
+    <!-- CONCLUSÃO -->
+    <!-- ========================= -->
+
+    <section class="area-final" style="display: flex;"> <!-- Área final do site -->
+
+            <h1>THE GAME AWARDS 2025</h1> <!-- Título -->
+
+<video
+    controls
+    loop
+    muted
+    class="video_tga"> <!-- Player de vídeo -->
+
+    <source src="videos/TGA.mp4" type="video/mp4"> <!-- Arquivo do vídeo -->
+
+    Seu navegador não suporta vídeo HTML5. <!-- Mensagem caso navegador não suporte vídeo -->
+
+</video> <!-- Fim do vídeo -->
+
+    </section> <!-- Fim da seção final -->
+
+    <!-- ========================= -->
+    <!-- ÁUDIO -->
+    <!-- ========================= -->
+
+    <section class="audio-area"> <!-- Área do áudio -->
+
+        <audio
+            class="audio-player"
+            controls
+            autoplay
+            loop> <!-- Player de áudio -->
+
+            <source
+                src="audio/Super Mario Bros 8 Bit.mp3"
+                type="audio/mpeg"> <!-- Arquivo da música -->
+
+        </audio> <!-- Fim do player -->
+
+    </section> <!-- Fim da área de áudio -->
+
+    <!-- ========================= -->
+    <!-- RODAPÉ -->
+    <!-- ========================= -->
+
+    <footer class="rodape"> <!-- Rodapé -->
+
+        <hr> <!-- Linha horizontal -->
+
+        <small>
+
+            © 2026 - Retro Games Ranking
+
+        </small> <!-- Texto pequeno do rodapé -->
+
+    </footer> <!-- Fim do rodapé -->
+
+</body> <!-- Fim do body -->
+
+</html> <!-- Fim do documento HTML -->

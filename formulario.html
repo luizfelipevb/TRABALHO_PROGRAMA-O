@@ -1,512 +1,1037 @@
 <!doctype html>
+
+<!-- ================================================= -->
+<!-- DEFINIÇÃO DO DOCUMENTO HTML5 -->
+<!-- ================================================= -->
+
 <html lang="pt-br">
-  <head>
+
+<head>
+
+    <!-- ================================================= -->
+    <!-- CONFIGURAÇÕES PRINCIPAIS DA PÁGINA -->
+    <!-- ================================================= -->
+
+    <!-- Define o padrão de caracteres UTF-8 -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título exibido na aba do navegador -->
     <title>Contato - Games World</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- ================================================= -->
+    <!-- IMPORTAÇÃO DO CSS PRINCIPAL -->
+    <!-- ================================================= -->
 
-    <!-- Define o ícone que aparece na aba do navegador -->
-    <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
+    <link
+        rel="stylesheet"
+        href="style.css" />
 
-  </head>
+    <!-- ================================================= -->
+    <!-- ÍCONE DA ABA DO NAVEGADOR -->
+    <!-- ================================================= -->
 
-  <body>
-    <!-- Cabeçalho principal -->
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="img/Controle.jpg" />
+
+    <!-- ================================================= -->
+    <!-- PRÉ-CONEXÃO COM SERVIDORES GOOGLE -->
+    <!-- MELHORA O CARREGAMENTO DAS FONTES -->
+    <!-- ================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <!-- ================================================= -->
+    <!-- IMPORTAÇÃO DAS FONTES UTILIZADAS -->
+    <!-- Press Start 2P = Fonte retrô -->
+    <!-- Poppins = Fonte moderna -->
+    <!-- ================================================= -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- CABEÇALHO PRINCIPAL -->
+    <!-- ================================================= -->
+
     <header id="titulo_principal">
 
-      <!-- Overlay retrô -->
-      <div class="overlay"></div>
+        <!-- Overlay escuro para melhorar leitura -->
+        <div class="overlay"></div>
 
-      <!-- Título -->
-      <h1>Games World</h1>
+        <!-- Título principal do site -->
+        <h1>
+            Games World
+        </h1>
 
-      <!-- Subtítulo -->
-      <h2>O universo dos jogos em um só lugar</h2>
+        <!-- Subtítulo do site -->
+        <h2>
+            O universo dos jogos em um só lugar
+        </h2>
 
-      <!-- Navegação -->
-      <nav class="postit">
+        <!-- ================================================= -->
+        <!-- MENU DE NAVEGAÇÃO -->
+        <!-- ================================================= -->
 
-        <a href="index.html">||Home||</a>
+            <nav class="postit">
 
-        <a href="jogos.html">||Jogos||</a>
+                <!-- Link para página inicial -->
+                <a href="index.html">||Home||</a>
 
-        <a href="ranking.html">||Ranking||</a>
+                <!-- Link para página de jogos -->
+                <a href="jogos.html">||Jogos||</a>
 
-        <a href="midia.html">||Mídia||</a>
+                <!-- Link para página de ranking -->
+                <a href="ranking.html">||Ranking||</a>
 
-        <a href="formulario.html">||Contato||</a>
+                <!-- Link para página de mídia -->
+                <a href="midia.html">||Mídia||</a>
 
-      </nav>
+                <!-- Link para página de contato -->
+                <a href="formulario.html">||Formulário||</a><!-- Link para a página de formulário -->
+
+            </nav>
+
+        </nav>
 
     </header>
 
-    <h1 class="titulo_secundario">🎮 Contato Gamer</h1>
-
-    <p>
-      Entre em contato com a equipe da Games World e compartilhe sua opinião
-      sobre os melhores jogos da história, e comece aqui se inscrevendo para o
-      torneio
-    </p>
-
-    <form action="processa.php" method="post" autocomplete="off">
-      <label for="nome">Nome do jogador:</label>
-      <input
-        type="text"
-        id="nome"
-        name="nome"
-        placeholder="Digite seu nickname"
-        minlength="3"
-        maxlength="20"
-        required
-      />
-      <br /><br />
-
-      <label for="email">Seu email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Digite seu email"
-        required
-      />
-      <br /><br />
-
-      <label for="telefone">Telefone:</label>
-      <input
-        type="tel"
-        id="telefone"
-        name="telefone"
-        placeholder="(00) 00000-0000"
-        required
-      />
-      <br /><br />
-
-      <label for="idade">Ano de nascimento:</label>
-      <input
-        type="number"
-        id="idade"
-        name="idade"
-        min="1500"
-        max="2026"
-        placeholder="Ex: 2004"
-      />
-      <br /><br />
-
-      <label for="github">Seu repositório de jogos</label>
-      <input
-        type="url"
-        id="github"
-        name="github"
-        placeholder="https://github.com/nome"
-      />
-      <br /><br />
-
-      <label for="senha">Senha da conta:</label>
-      <input type="password" id="senha" name="senha" required />
-      <br /><br />
-
-      <label for="arquivo">Envie um print do seu setup:</label>
-      <input type="file" id="arquivo" name="arquivo" />
-      <br /><br />
-
-      <label for="cor">Cor favorita do setup:</label>
-      <input type="color" id="cor" name="cor" />
-      <br /><br />
-
-      <fieldset>
-        <legend>⏰ Informações de tempo</legend>
-
-        <label for="data">Data da inscrição:</label>
-        <input type="date" id="data" name="data" />
-        <br /><br />
-
-        <label for="mes">Mês favorito gamer:</label>
-        <input type="month" id="mes" name="mes" />
-        <br /><br />
-
-        <label for="semana">Semana do campeonato:</label>
-        <input type="week" id="semana" name="semana" />
-        <br /><br />
-
-        <label for="hora">Horário que joga:</label>
-        <input type="time" id="hora" name="hora" />
-        <br /><br />
-
-        <label for="datahora">Data e hora da inscrição:</label>
-        <input type="datetime-local" id="datahora" name="datahora" />
-        <br /><br />
-      </fieldset>
-
-      <br />
-
-      <label for="pesquisa">Pesquisar jogo favorito:</label>
-
-      <input
-        type="search"
-        id="pesquisa"
-        name="pesquisa"
-        placeholder="Pesquisar jogo..."
-      />
-
-      <br /><br />
-
-      <label for="descricao"> Fale sobre sua experiência gamer: </label>
-
-      <br />
-
-      <textarea
-        id="descricao"
-        name="descricao"
-        cols="40"
-        rows="8"
-        placeholder="Conte sua jornada gamer..."
-      ></textarea>
-
-      <br /><br />
-
-      <fieldset>
-        <legend>🏆 Qual é a melhor categoria para você:</legend>
-
-        <label for="jogo1">
-          <input type="radio" id="jogo1" name="goty" value="Ação" />
-          Categoria AÇÃO
-        </label>
-
-        <label for="jogo2">
-          <input
-            type="radio"
-            id="jogo2"
-            name="goty"
-            value="Narrativo"
-            checked
-          />
-          Categoria NARRATIVO
-        </label>
-
-        <label for="jogo3">
-          <input type="radio" id="jogo3" name="goty" value="Indie" />
-          Categoria INDIE
-        </label>
-
-        <label for="jogo4">
-          <input type="radio" id="jogo4" name="goty" value="Esportivo" />
-          Categoria ESPORTIVO
-        </label>
-
-        <label for="jogo5">
-          <input type="radio" id="jogo5" name="goty" value="direcao" />
-          Categoria DIREÇÃO DE ARTE
-        </label>
-
-        <label for="jogo6">
-          <input type="radio" id="jogo6" name="goty" value="RPG" />
-          Categoria RPG
-        </label>
-
-        <label for="jogo7">
-          <input type="radio" id="jogo7" name="goty" value="multiplayer" />
-          Categoria MULTIPLAYER
-        </label>
-
-        <label for="jogo8">
-          <input type="radio" id="jogo8" name="goty" value="estrategia" />
-          Categoria ESTRATÉGIA
-        </label>
-
-        <br />
-
-        <label for="jogo9">
-          <input type="radio" id="jogo9" name="goty" value="arte" />
-          Categoria DIREÇÃO DE ARTE
-        </label>
-      </fieldset>
-
-      <br /><br />
-
-      <label for="nivel">
-        Nível gamer nível 1 (Jogador casual) // nível 10 (Altamente
-        competitivo):
-      </label>
-      <br />
-      <input type="range" id="nivel" name="nivel" min="1" max="10" />
-
-      <br /><br />
-
-      <label for="lista_suspensa"> Plataforma favorita: </label>
-
-      <select id="lista_suspensa" name="plataforma">
-        <optgroup label="Consoles">
-          <option value="ps5">PlayStation</option>
-          <option value="xbox">Xbox</option>
-          <option value="switch">Nintendo</option>
-        </optgroup>
-
-        <optgroup label="Computadores">
-          <option value="pcgamer">PC Gamer</option>
-          <option value="notebook">Notebook Gamer</option>
-          <option value="steamdeck">Steam Deck</option>
-        </optgroup>
-      </select>
-
-      <br /><br />
-
-      <fieldset class="Jogofavorito">
-        <legend>🎮 Jogos favoritos</legend>
-
-        <label>
-          <input type="checkbox" name="gta5" value="gta5" />
-          GTA V
-        </label>
-
-        <label>
-          <input type="checkbox" name="gta_sa" value="gta_sa" />
-          GTA San Andreas
-        </label>
-
-        <label>
-          <input type="checkbox" name="rdr2" value="rdr" />
-          Red Dead Redemption
-        </label>
-
-        <label>
-          <input type="checkbox" name="rdr2" value="rdr2" />
-          Red Dead Redemption 2
-        </label>
-
-        <label>
-          <input type="checkbox" name="gow" value="gow" />
-          God of War Ragnarök
-        </label>
-
-        <label>
-          <input type="checkbox" name="gow2018" value="gow2018" />
-          God of War
-        </label>
-
-        <label>
-          <input type="checkbox" name="minecraft" value="minecraft" />
-          Minecraft
-        </label>
-
-        <label>
-          <input type="checkbox" name="elden" value="elden" />
-          Elden Ring
-        </label>
-
-        <label>
-          <input type="checkbox" name="fortnite" value="fortnite" />
-          Fortnite
-        </label>
-
-        <label>
-          <input type="checkbox" name="cs2" value="cs2" />
-          Counter-Strike 2
-        </label>
-
-        <label>
-          <input type="checkbox" name="valorant" value="valorant" />
-          Valorant
-        </label>
-
-        <label>
-          <input type="checkbox" name="lol" value="lol" />
-          League of Legends
-        </label>
-
-        <label>
-          <input type="checkbox" name="codmw3" value="codmw3" />
-          Call of Duty MW3
-        </label>
-
-        <label>
-          <input type="checkbox" name="warzone" value="warzone" />
-          Call of Duty Warzone
-        </label>
-
-        <label>
-          <input type="checkbox" name="zelda_totk" value="zelda_totk" />
-          Zelda Tears of the Kingdom
-        </label>
-
-        <label>
-          <input type="checkbox" name="zelda_botw" value="zelda_botw" />
-          Zelda Breath of the Wild
-        </label>
-
-        <label>
-          <input type="checkbox" name="witcher3" value="witcher3" />
-          The Witcher 3
-        </label>
-
-        <label>
-          <input type="checkbox" name="cyberpunk" value="cyberpunk" />
-          Cyberpunk 2077
-        </label>
-
-        <label>
-          <input type="checkbox" name="re4" value="re4" />
-          Resident Evil 4 Remake
-        </label>
-
-        <label>
-          <input type="checkbox" name="tlou" value="tlou" />
-          The Last of Us
-        </label>
-
-        <label>
-          <input type="checkbox" name="tlou2" value="spiderman" />
-          Marvel's Spider Man
-        </label>
-
-        <label>
-          <input type="checkbox" name="bloodborne" value="bloodborne" />
-          Bloodborne
-        </label>
-
-        <label>
-          <input type="checkbox" name="sekiro" value="sekiro" />
-          Sekiro Shadows Die Twice
-        </label>
-
-        <label>
-          <input type="checkbox" name="darksouls3" value="darksouls3" />
-          Dark Souls 3
-        </label>
-
-        <label>
-          <input type="checkbox" name="halo" value="halo" />
-          Halo Infinite
-        </label>
-
-        <label>
-          <input type="checkbox" name="forza" value="forza" />
-          Forza Horizon 5
-        </label>
-
-        <label>
-          <input type="checkbox" name="fifa25" value="fifa25" />
-          EA Sports FC 25
-        </label>
-
-        <label>
-          <input type="checkbox" name="pes" value="pes" />
-          eFootball
-        </label>
-
-        <label>
-          <input type="checkbox" name="rocketleague" value="rocketleague" />
-          Rocket League
-        </label>
-
-        <label>
-          <input type="checkbox" name="roblox" value="roblox" />
-          Roblox
-        </label>
-
-        <label>
-          <input type="checkbox" name="pubg" value="pubg" />
-          PUBG
-        </label>
-
-        <label>
-          <input type="checkbox" name="amongus" value="amongus" />
-          Among Us
-        </label>
-
-        <label>
-          <input type="checkbox" name="apex" value="apex" />
-          Apex Legends
-        </label>
-
-        <label>
-          <input type="checkbox" name="doom" value="doom" />
-          Doom Eternal
-        </label>
-
-        <label>
-          <input type="checkbox" name="persona5" value="persona5" />
-          Persona 5 Royal
-        </label>
-
-        <label>
-          <input type="checkbox" name="monsterhunter" value="monsterhunter" />
-          Monster Hunter World
-        </label>
-
-        <label>
-          <input type="checkbox" name="hollowknight" value="hollowknight" />
-          Hollow Knight
-        </label>
-
-        <label>
-          <input type="checkbox" name="terraria" value="terraria" />
-          Terraria
-        </label>
-
-        <label>
-          <input type="checkbox" name="overwatch2" value="overwatch2" />
-          Overwatch 2
-        </label>
-
-        <label>
-          <input type="checkbox" name="overwatch2" value="CODBO2" />
-          Call of Duty Black Ops 2
-        </label>
-      </fieldset>
-
-      <br /><br />
-
-      <!-- Datalist -->
-      <label for="busca_datalist"> Próximo GOTY: </label>
-
-      <input type="text" id="busca_datalist" list="jogos" />
-
-      <datalist id="jogos">
-        <option>Grand Theft Auto VI</option>
-        <option>Ghost of Yōtei</option>
-        <option>Death Stranding 2: On the Beach</option>
-        <option>Monster Hunter Wilds</option>
-        <option>Hades II</option>
-        <option>Resident Evil Requiem</option>
-        <option>Saros</option>
-        <option>Nioh 3</option>
-        <option>Phantom Blade Zero</option>
-        <option>Pragmata</option>
-        <option>Crimson Desert</option>
-        <option>007 First Light</option>
-        <option>Marvel's Wolverine</option>
-        <option>Zero Parades For Dead Spies</option>
-      </datalist>
-
-      <br /><br />
-
-      <audio controls muted autoplay loop>
-        <source src="audio/Grand Theft Auto San Andreas.mp3" type="audio/mp3" />
-
-        Seu navegador não suporta áudio.
-      </audio>
-
-      <br /><br />
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.498288541081!2d-53.481113924832975!3d-24.94915597787144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d15547bda185%3A0xd0cbc7fb7cc4a1a6!2sUNIPAR%20-%20Universidade%20Paranaense%20-%20Cascavel!5e0!3m2!1spt-BR!2sus!4v1779301354671!5m2!1spt-BR!2sus"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-
-      <br /><br />
-
-      <div class="botoes-form">
-        <button type="reset">Limpar formulário</button>
-
-        <button type="submit">Enviar cadastro</button>
-      </div>
-    </form>
-  </body>
+    <!-- ================================================= -->
+    <!-- BANNER PRINCIPAL -->
+    <!-- ================================================= -->
+
+    <section class="banner banner-contato banner_formulario_gamer">
+
+        <!-- Texto pequeno do banner -->
+        <span>
+            Formulário atualizado em 2026
+        </span>
+
+        <!-- Título do banner -->
+        <h2 class="titulo_secundario">
+
+            🎮 Contato Gamer
+
+        </h2>
+
+        <!-- Descrição do banner -->
+        <p>
+
+            Entre em contato com a equipe da Games World,
+            participe de torneios, envie sugestões e
+            compartilhe sua jornada gamer.
+
+        </p>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- ÁREA DE ANIMAÇÃO -->
+    <!-- ================================================= -->
+
+    <section class="animacao">
+
+        <!-- Imagem da nave espacial -->
+        <img
+            src="img/nave espacial.png"
+            alt="Sonic Correndo">
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- CONTAINER PRINCIPAL -->
+    <!-- ================================================= -->
+
+    <main
+        id="layout_formulario"
+        class="layout_formulario_gamer">
+
+        <!-- ================================================= -->
+        <!-- ÁREA PRINCIPAL DO FORMULÁRIO -->
+        <!-- ================================================= -->
+
+        <section
+            class="container_formulario conteudo_formulario_gamer">
+
+            <!-- ================================================= -->
+            <!-- CARD DE APRESENTAÇÃO -->
+            <!-- ================================================= -->
+
+            <section
+                class="card-retro card_formulario_gamer">
+
+                <!-- Título do card -->
+                <h2 class="titulo_secundario">
+
+                    🏆 Campeonato Games World
+
+                </h2>
+
+                <!-- Texto do card -->
+                <p>
+
+                    Preencha suas informações gamer,
+                    escolha seus jogos favoritos,
+                    informe sua plataforma principal
+                    e participe da comunidade mais
+                    retrô da internet.
+
+                </p>
+
+                <!-- Texto complementar -->
+                <p>
+
+                    O objetivo desse formulário é conectar jogadores,
+                    montar rankings, descobrir os jogos mais populares
+                    e organizar futuros torneios competitivos.
+
+                </p>
+
+            </section>
+
+            <!-- ================================================= -->
+            <!-- FORMULÁRIO PRINCIPAL -->
+            <!-- ================================================= -->
+
+            <form
+                action="processa.php"
+                method="post"
+                autocomplete="off"
+                class="formulario_gamer formulario_gamer_retro">
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - INFORMAÇÕES DO JOGADOR -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <!-- Legenda do fieldset -->
+                    <legend>
+
+                        👤 Informações do Jogador
+
+                    </legend>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO NOME -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <!-- Texto do campo -->
+                        <label for="nome">
+
+                            Nome do jogador:
+
+                        </label>
+
+                        <!-- Input do nome -->
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nickname"
+                            minlength="3"
+                            maxlength="20"
+                            required />
+
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO EMAIL -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="email">
+
+                            Seu email:
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu email"
+                            required />
+
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO TELEFONE -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="telefone">
+
+                            Telefone:
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(00) 00000-0000"
+                            required />
+
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO IDADE -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="idade">
+
+                            Ano de nascimento:
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="idade"
+                            name="idade"
+                            min="1950"
+                            max="2026"
+                            placeholder="Ex: 2004" />
+
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO GITHUB -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="github">
+
+                            Seu repositório gamer:
+
+                        </label>
+
+                        <input
+                            type="url"
+                            id="github"
+                            name="github"
+                            placeholder="https://github.com/nome" />
+
+                    </div>
+
+                    <!-- ================================================= -->
+                    <!-- CAMPO SENHA -->
+                    <!-- ================================================= -->
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="senha">
+
+                            Senha da conta:
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required />
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - PERSONALIZAÇÃO GAMER -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        🎨 Personalização Gamer
+
+                    </legend>
+
+                    <!-- Upload de arquivo -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="arquivo">
+
+                            Envie um print do setup:
+
+                        </label>
+
+                        <input
+                            type="file"
+                            id="arquivo"
+                            name="arquivo" />
+
+                    </div>
+
+                    <!-- Cor favorita -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="cor">
+
+                            Cor favorita do setup:
+
+                        </label>
+
+                        <input
+                            type="color"
+                            id="cor"
+                            name="cor" />
+
+                    </div>
+
+                    <!-- Campo de pesquisa -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="pesquisa">
+
+                            Pesquisar jogo favorito:
+
+                        </label>
+
+                        <input
+                            type="search"
+                            id="pesquisa"
+                            name="pesquisa"
+                            placeholder="Pesquisar jogo..." />
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - INFORMAÇÕES DE TEMPO -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        ⏰ Informações de Tempo
+
+                    </legend>
+
+                    <!-- Data -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="data">
+
+                            Data da inscrição:
+
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            name="data" />
+
+                    </div>
+
+                    <!-- Mês -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="mes">
+
+                            Mês favorito gamer:
+
+                        </label>
+
+                        <input
+                            type="month"
+                            id="mes"
+                            name="mes" />
+
+                    </div>
+
+                    <!-- Semana -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="semana">
+
+                            Semana do campeonato:
+
+                        </label>
+
+                        <input
+                            type="week"
+                            id="semana"
+                            name="semana" />
+
+                    </div>
+
+                    <!-- Horário -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="hora">
+
+                            Horário que joga:
+
+                        </label>
+
+                        <input
+                            type="time"
+                            id="hora"
+                            name="hora" />
+
+                    </div>
+
+                    <!-- Data e hora -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="datahora">
+
+                            Data e hora da inscrição:
+
+                        </label>
+
+                        <input
+                            type="datetime-local"
+                            id="datahora"
+                            name="datahora" />
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - EXPERIÊNCIA GAMER -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        🎮 Experiência Gamer
+
+                    </legend>
+
+                    <!-- Área de texto -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="descricao">
+
+                            Conte sua jornada gamer:
+
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            cols="40"
+                            rows="8"
+                            placeholder="Conte sua experiência nos games..."></textarea>
+
+                    </div>
+
+                    <!-- Range -->
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="nivel">
+
+                            Nível gamer:
+                            Casual (1) até Competitivo (10)
+
+                        </label>
+
+                        <input
+                            type="range"
+                            id="nivel"
+                            name="nivel"
+                            min="1"
+                            max="10" />
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - MELHOR CATEGORIA -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        🏆 Melhor Categoria Gamer
+
+                    </legend>
+
+                    <!-- Grid dos radio buttons -->
+                    <div class="radio-grid radio_grid_gamer">
+
+                        <label><input type="radio" name="goty" value="Ação" /> AÇÃO</label>
+
+                        <label><input type="radio" name="goty" value="Narrativo" checked /> NARRATIVO</label>
+
+                        <label><input type="radio" name="goty" value="Indie" /> INDIE</label>
+
+                        <label><input type="radio" name="goty" value="Esportivo" /> ESPORTIVO</label>
+
+                        <label><input type="radio" name="goty" value="Arte" /> DIREÇÃO DE ARTE</label>
+
+                        <label><input type="radio" name="goty" value="RPG" /> RPG</label>
+
+                        <label><input type="radio" name="goty" value="Multiplayer" /> MULTIPLAYER</label>
+
+                        <label><input type="radio" name="goty" value="Estratégia" /> ESTRATÉGIA</label>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - PLATAFORMA FAVORITA -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        🖥️ Plataforma Favorita
+
+                    </legend>
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="lista_suspensa">
+
+                            Escolha sua plataforma principal:
+
+                        </label>
+
+                        <!-- Select principal -->
+                        <select
+                            id="lista_suspensa"
+                            name="plataforma">
+
+                            <!-- Grupo consoles -->
+                            <optgroup label="Consoles">
+
+                                <option value="ps5">
+                                    PlayStation
+                                </option>
+
+                                <option value="xbox">
+                                    Xbox
+                                </option>
+
+                                <option value="switch">
+                                    Nintendo
+                                </option>
+
+                            </optgroup>
+
+                            <!-- Grupo computadores -->
+                            <optgroup label="Computadores">
+
+                                <option value="pcgamer">
+                                    PC Gamer
+                                </option>
+
+                                <option value="notebook">
+                                    Notebook Gamer
+                                </option>
+
+                                <option value="steamdeck">
+                                    Steam Deck
+                                </option>
+
+                            </optgroup>
+
+                        </select>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - JOGOS FAVORITOS -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card Jogofavorito card_formulario_gamer">
+
+                    <legend>
+
+                        🎮 Jogos Favoritos
+
+                    </legend>
+
+                    <!-- Grid de checkboxes -->
+                    <div class="checkbox-grid checkbox_grid_gamer">
+
+                        <label><input type="checkbox" /> GTA V</label>
+
+                        <label><input type="checkbox" /> Minecraft</label>
+
+                        <label><input type="checkbox" /> Elden Ring</label>
+
+                        <label><input type="checkbox" /> Fortnite</label>
+
+                        <label><input type="checkbox" /> Valorant</label>
+
+                        <label><input type="checkbox" /> League of Legends</label>
+
+                        <label><input type="checkbox" /> The Witcher 3</label>
+
+                        <label><input type="checkbox" /> Bloodborne</label>
+
+                        <label><input type="checkbox" /> Sekiro</label>
+
+                        <label><input type="checkbox" /> Halo Infinite</label>
+
+                        <label><input type="checkbox" /> Forza Horizon 5</label>
+
+                        <label><input type="checkbox" /> Roblox</label>
+
+                        <label><input type="checkbox" /> Apex Legends</label>
+
+                        <label><input type="checkbox" /> Doom Eternal</label>
+
+                        <label><input type="checkbox" /> Persona 5 Royal</label>
+
+                        <label><input type="checkbox" /> Hollow Knight</label>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- FIELDSET - DATALIST -->
+                <!-- ================================================= -->
+
+                <fieldset
+                    class="card-retro formulario-card card_formulario_gamer">
+
+                    <legend>
+
+                        👑 Próximo GOTY
+
+                    </legend>
+
+                    <div class="grupo-form grupo_form_gamer">
+
+                        <label for="busca_datalist">
+
+                            Qual jogo pode vencer o próximo GOTY?
+
+                        </label>
+
+                        <!-- Input conectado ao datalist -->
+                        <input
+                            type="text"
+                            id="busca_datalist"
+                            list="jogos" />
+
+                    </div>
+
+                    <!-- Lista de sugestões -->
+                    <datalist id="jogos">
+
+                        <option>
+                            Grand Theft Auto VI
+                        </option>
+
+                        <option>
+                            Ghost of Yōtei
+                        </option>
+
+                        <option>
+                            Death Stranding 2
+                        </option>
+
+                        <option>
+                            Resident Evil Requiem
+                        </option>
+
+                        <option>
+                            Marvel's Wolverine
+                        </option>
+
+                    </datalist>
+
+                </fieldset>
+
+                <!-- ================================================= -->
+                <!-- BOTÕES DO FORMULÁRIO -->
+                <!-- ================================================= -->
+
+                <div class="botoes-form botoes_formulario_gamer">
+
+                    <!-- Botão reset -->
+                    <button
+                        type="reset"
+                        class="botao-retro">
+
+                        Limpar formulário
+
+                    </button>
+
+                    <!-- Botão enviar -->
+                    <button
+                        type="submit"
+                        class="botao-retro botao-enviar">
+
+                        Enviar cadastro
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- ================================================= -->
+        <!-- SIDEBAR -->
+        <!-- ================================================= -->
+
+        <aside
+            class="sidebar_formulario sidebar_formulario_gamer">
+
+            <!-- ================================================= -->
+            <!-- CARD EVENTOS -->
+            <!-- ================================================= -->
+
+            <section
+                class="card-retro card_formulario_gamer">
+
+                <h2 class="titulo_secundario">
+
+                    🏆 Eventos Gamer
+
+                </h2>
+
+                <p>
+
+                    Participe de campeonatos,
+                    rankings competitivos,
+                    eventos retrô e torneios online
+                    organizados pela comunidade Games World.
+
+                </p>
+
+            </section>
+
+            <!-- ================================================= -->
+            <!-- CARD ÁUDIO -->
+            <!-- ================================================= -->
+
+            <section
+                class="card-retro card_formulario_gamer">
+
+                <h2 class="titulo_secundario">
+
+                    🎧 Rádio Gamer
+
+                </h2>
+
+                <!-- Player de áudio -->
+                <audio
+                    controls
+                    muted
+                    autoplay
+                    loop
+                    class="audio-player">
+
+                    <!-- Música -->
+                    <source
+                        src="audio/Grand Theft Auto San Andreas.mp3"
+                        type="audio/mp3" />
+
+                    <!-- Mensagem fallback -->
+                    Seu navegador não suporta áudio.
+
+                </audio>
+
+            </section>
+
+            <!-- ================================================= -->
+            <!-- CARD MAPA -->
+            <!-- ================================================= -->
+
+            <section
+                class="card-retro card_formulario_gamer">
+
+                <h2 class="titulo_secundario">
+
+                    📍 Localização
+
+                </h2>
+
+                <!-- Google Maps da UNIPAR -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.498287891094!2d-53.478539!3d-24.949156000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d15547bda185%3A0xd0cbc7fb7cc4a1a6!2sUNIPAR%20-%20Universidade%20Paranaense%20-%20Cascavel!5e0!3m2!1spt-BR!2sbr!4v1779726636353!5m2!1spt-BR!2sbr"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+
+            </section>
+
+            <!-- ================================================= -->
+            <!-- CARD RANKING -->
+            <!-- ================================================= -->
+
+            <section
+                class="card-retro card_formulario_gamer">
+
+                <h2 class="titulo_secundario">
+
+                    ⭐ Ranking da Semana
+
+                </h2>
+
+                <!-- Lista ranking -->
+                <ul id="teste_estilo_lista_ul">
+
+                    <li>
+                        Counter-Strike 2
+                    </li>
+
+                    <li>
+                        PUBG: BATTLEGROUNDS
+                    </li>
+
+                    <li>
+                        Apex Legends
+                    </li>
+
+                    <li>
+                        Forza Horizon 6
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+    <!-- ================================================= -->
+    <!-- ÁREA FINAL -->
+    <!-- ================================================= -->
+
+    <section class="area-final">
+
+        <!-- ================================================= -->
+        <!-- CONCLUSÃO -->
+        <!-- ================================================= -->
+
+        <section id="conclusao">
+
+            <h2 class="titulo_secundario">
+
+                💬Galera Gamer
+
+            </h2>
+
+            <p>
+
+                A Games World reúne jogadores
+                de todas as plataformas
+                para compartilhar experiências,
+                rankings e campeonatos.
+
+            </p>
+
+        </section>
+
+        <!-- ================================================= -->
+        <!-- CARD TRAILER -->
+        <!-- ================================================= -->
+
+        <section
+            class="card-retro card_formulario_gamer">
+
+            <h2 class="titulo_secundario">
+
+                🎥 Trailer Gamer
+
+            </h2>
+
+            <!-- Vídeo trailer -->
+            <iframe
+                class="mapa_formulario_gamer"
+                src="https://www.youtube.com/watch?v=HyjVC7fKLVg"
+                title="Trailer GTA VI"
+                allowfullscreen>
+
+            </iframe>
+
+        </section>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- IMAGEM FINAL -->
+    <!-- ================================================= -->
+
+    <section class="container-imagem">
+
+        <!-- Imagem final -->
+        <img
+            src="img/Game over.jpg"
+            alt="Banner GTA VI"
+            class="imagemfinal">
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- RODAPÉ -->
+    <!-- ================================================= -->
+
+    <footer class="rodape">
+
+        <!-- Linha horizontal -->
+        <hr>
+
+        <!-- Texto copyright -->
+        <small>
+
+            © 2026 - Games World | Formulário Gamer
+
+        </small>
+
+    </footer>
+
+</body>
+
 </html>

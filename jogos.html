@@ -1,130 +1,186 @@
+<!-- Define que o documento utiliza HTML5 -->
 <!doctype html>
 
+<!-- Início do documento HTML e define o idioma como português do Brasil -->
 <html lang="pt-br">
 
 <head>
 
-    <!-- Configurações -->
+    <!-- ========================= -->
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <!-- ========================= -->
+
+    <!-- Define o padrão de caracteres UTF-8 -->
     <meta charset="UTF-8" />
 
+    <!-- Faz o site funcionar corretamente em celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Título -->
+    <!-- Título que aparece na aba do navegador -->
     <title>Jogos Mais Famosos</title>
 
-    <!-- CSS -->
+    <!-- Importa o arquivo CSS principal -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Fonte retrô -->
+    <!-- Pré conexão com o servidor das fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <!-- Pré conexão com o servidor das fontes com suporte crossorigin -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Importa as fontes retrô e moderna do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Ícone -->
+    <!-- Define o ícone da aba do navegador -->
     <link rel="icon" type="image/x-icon" href="img/Controle.jpg" />
 
 </head>
 
+<!-- Corpo principal do site -->
 <body>
 
-    <!-- Container -->
+    <!-- Container principal da página -->
     <div id="jogos">
 
-        <!-- HEADER -->
+        <!-- ========================= -->
+        <!-- HEADER / CABEÇALHO -->
+        <!-- ========================= -->
+
         <header id="titulo_principal">
 
-            <!-- Overlay retrô -->
+            <!-- Camada overlay usada para efeito visual no fundo -->
             <div class="overlay"></div>
 
-            <!-- Título -->
+            <!-- Título principal do site -->
             <h1>Games World</h1>
 
-            <!-- Subtítulo -->
+            <!-- Subtítulo do site -->
             <h2>O universo dos jogos em um só lugar</h2>
 
-            <!-- Navegação -->
+            <!-- Menu de navegação -->
             <nav class="postit">
 
+                <!-- Link para página inicial -->
                 <a href="index.html">||Home||</a>
 
+                <!-- Link para página de jogos -->
                 <a href="jogos.html">||Jogos||</a>
 
+                <!-- Link para página de ranking -->
                 <a href="ranking.html">||Ranking||</a>
 
+                <!-- Link para página de mídia -->
                 <a href="midia.html">||Mídia||</a>
 
-                <a href="formulario.html">||Contato||</a>
+                <!-- Link para página de contato -->
+                <a href="formulario.html">||Formulário||</a><!-- Link para a página de formulário -->
 
             </nav>
 
         </header>
 
+        <!-- ========================= -->
         <!-- MAIN -->
+        <!-- ========================= -->
+
         <main>
 
-            <!-- Banner -->
+            <!-- ========================= -->
+            <!-- BANNER -->
+            <!-- ========================= -->
+
             <header class="banner">
 
+                <!-- Texto informando data de publicação -->
                 <span>
                     Publicado no dia 19/05/2026
                 </span>
 
+                <!-- Título secundário do banner -->
                 <h3 class="titulo_secundario">
                     Universo Gamer
                 </h3>
 
+                <!-- Descrição do banner -->
                 <p>
                     Jogos mais populares do mundo
                 </p>
 
             </header>
 
-            <!-- Layout -->
+            <!-- ========================= -->
+            <!-- LAYOUT PRINCIPAL -->
+            <!-- ========================= -->
+
             <div id="layout">
 
-                <!-- Conteúdo -->
+                <!-- Área principal de conteúdo -->
                 <article class="conteudo-principal">
 
-                    <!-- História -->
+                    <!-- ========================= -->
+                    <!-- CARD HISTÓRIA -->
+                    <!-- ========================= -->
+
                     <section class="card-retro">
 
+                        <!-- Título da seção -->
                         <h3 class="titulo_jogos">
                             História dos Games
                         </h3>
 
+                        <!-- Primeiro bloco de texto -->
                         <p class="teste_display" style="display: block; width: 540px; border: 3px solid rgb(0, 0, 255); color: rgb(33, 0, 247);">
+
+                          <!-- Texto explicando o início dos videogames -->
                           Os videogames começaram de forma muito simples, quase como experimentos científicos, e hoje se tornaram uma das maiores indústrias de entretenimento do planeta. A evolução dos jogos aconteceu em etapas bem marcantes, cada uma trazendo novas ideias, tecnologias e formas de jogar.
+
                         </p>
 
+                        <!-- Segundo bloco de texto -->
                         <p class="teste_display" style="display: block; width: 540px; border: 3px solid rgb(0, 0, 255); color: rgb(33, 0, 247);">
+
+                            <!-- Texto falando sobre GTA V e evolução da indústria -->
                             Uma coisa interessante é o nível de complexidade dos jogos modernos. Títulos como Grand Theft Auto V mostram como a indústria evoluiu: o jogo conta com um mundo aberto extremamente detalhado, múltiplas histórias interligadas e uma produção que envolveu milhares de pessoas ao longo de vários anos. Mesmo após mais de uma década de lançamento, ele continua recebendo atualizações e mantendo uma base enorme de jogadores ativos.
+
                         </p>
 
+                        <!-- Terceiro bloco de texto -->
                         <p class="teste_display" style="display: block; width: 540px; border: 3px solid rgb(0, 0, 255); color: rgb(33, 0, 247);">
+
+                            <!-- Texto sobre impacto dos games na sociedade -->
                             Além disso, os videogames deixaram de ser apenas entretenimento e passaram a ter impacto em várias áreas da sociedade. Hoje existem competições profissionais de eSports com prêmios milionários, eventos dentro dos próprios jogos com milhões de espectadores simultâneos, e até o uso de jogos em treinamentos reais, como simulações médicas, militares e educacionais.
+
                         </p>
 
                     </section>
 
-                    <!-- Jogos -->
+                    <!-- ========================= -->
+                    <!-- CARD JOGOS -->
+                    <!-- ========================= -->
+
                     <section class="card-retro">
 
+                        <!-- Título da seção -->
                         <h3 class="titulo_secundario">
                             Jogos em destaque
                         </h3>
 
+                        <!-- Lista ordenada de jogos -->
                         <ol class="lista-jogos">
 
+                            <!-- Item da lista -->
                             <li>Tetris</li>
 
+                            <!-- Item da lista -->
                             <li>GTA V</li>
 
+                            <!-- Item da lista -->
                             <li>Minecraft</li>
 
+                            <!-- Item da lista -->
                             <li>Fortnite</li>
 
+                            <!-- Item da lista -->
                             <li>League of Legends</li>
 
                         </ol>
@@ -133,88 +189,126 @@
 
                 </article>
 
- <!-- SIDEBAR -->
-<aside class="sidebar">
+                <!-- ========================= -->
+                <!-- SIDEBAR -->
+                <!-- ========================= -->
 
-    <h3 class="titulo_secundario">
-        Vídeo em destaque
-    </h3>
+                <aside class="sidebar">
 
-    <div class="video-destaque">
+                    <!-- Título da sidebar -->
+                    <h3 class="titulo_secundario">
+                        Vídeo em destaque
+                    </h3>
 
-        <!-- CAPA (imagem menor e alinhada) -->
-        <img 
-            src="./img/Batman capa.jpg" 
-            alt="Batman capa do jogo LEGO Batman"
-            class="video-capa"
-        />
+                    <!-- Container do vídeo -->
+                    <div class="video-destaque">
 
-        <!-- VÍDEO (elemento principal) -->
-        <video 
-            controls 
-            autoplay 
-            loop 
-            poster="img/capa_game.jpg"
-            class="video-player"
-        >
-            <source 
-                src="videos/Lego Batman.mp4" 
-                type="video/mp4" 
-            />
-        </video>
+                        <!-- Imagem de capa do vídeo -->
+                        <img 
+                            src="./img/Batman capa.jpg" 
+                            alt="Batman capa do jogo LEGO Batman"
+                            class="video-capa"
+                        />
 
-        <!-- TEXTO -->
-        <div class="texto-video">
-<p>
+                        <!-- Player de vídeo -->
+                        <video 
+                            controls 
+                            autoplay 
+                            loop 
+                            poster="img/capa_game.jpg"
+                            class="video-player"
+                        >
+
+                            <!-- Arquivo de vídeo -->
+                            <source 
+                                src="videos/Lego Batman.mp4" 
+                                type="video/mp4" 
+                            />
+
+                        </video>
+
+                        <!-- Área de texto explicativo -->
+                        <div class="texto-video">
+
+                            <!-- Texto sobre LEGO Batman -->
+                            <p>
 LEGO Batman: Legacy of the Dark Knight é um jogo de ação e aventura em mundo aberto que reimagina a trajetória do Batman dentro do universo LEGO, combinando humor característico da franquia com uma narrativa mais sombria e cinematográfica inspirada na série Arkham.
 </p>
+
+                            <!-- Texto sobre a história do personagem -->
 <p>
 O jogo acompanha a evolução de Bruce Wayne ao longo de 86 anos de história do personagem, explorando suas origens, sua transformação no Cavaleiro das Trevas e seus confrontos contra alguns dos vilões mais icônicos de Gotham City. A proposta é unir diferentes fases e versões do Batman em uma única experiência interativa.
-</p><p>
+</p>
+
+                            <!-- Texto informando plataformas -->
+<p>
 🎮 Plataformas disponíveis
-</p><p>
+</p>
+
+                            <!-- Introdução das plataformas -->
+<p>
 O jogo está previsto para ser lançado nas seguintes plataformas:
-</p><p>
+</p>
+
+                            <!-- Lista das plataformas -->
+<p>
 PC (Windows)
 PlayStation 5
 Xbox Series X / Series S
 </p>
 
-    <img src="https://i.pinimg.com/originals/ab/b1/f9/abb1f98f7959a4dc23e7e9e74d26caf6.jpg" alt="batmansorrindo" height="230px" width="550px" style="border-radius: 150px;">
-        </div>
+                            <!-- Imagem do Batman sorrindo -->
+<img src="https://i.pinimg.com/originals/ab/b1/f9/abb1f98f7959a4dc23e7e9e74d26caf6.jpg" alt="batmansorrindo" height="230px" width="550px" style="border-radius: 150px;">
 
-    </div>
+                        </div>
 
-</aside>
+                    </div>
+
+                </aside>
 
             </div>
 
-            <!-- Área Final -->
+            <!-- ========================= -->
+            <!-- ÁREA FINAL -->
+            <!-- ========================= -->
+
             <article class="area-final">
 
-                <!-- Tabela -->
+                <!-- ========================= -->
+                <!-- TABELA -->
+                <!-- ========================= -->
+
                 <section class="card-tabela">
 
+                    <!-- Título da tabela -->
                     <h3 class="titulo_secundario">
                         Tabela dos Jogos
                     </h3>
 
+                    <!-- Tabela principal -->
                     <table class="tabelalancamento">
 
+                        <!-- Linha do título da tabela -->
                         <tr id="titulolancamento">
 
+                            <!-- Coluna -->
                             <td>Jogo</td>
 
+                            <!-- Coluna -->
                             <td>Ano</td>
 
+                            <!-- Coluna -->
                             <td>Empresa</td>
 
+                            <!-- Coluna -->
                             <td>Faturamento</td>
 
+                            <!-- Coluna -->
                             <td>Gênero</td>
 
                         </tr>
 
+                        <!-- Linha GTA V -->
                         <tr>
 
                             <td>GTA V</td>
@@ -229,6 +323,7 @@ Xbox Series X / Series S
 
                         </tr>
 
+                        <!-- Linha Minecraft -->
                         <tr>
 
                             <td>Minecraft</td>
@@ -243,6 +338,7 @@ Xbox Series X / Series S
 
                         </tr>
 
+                        <!-- Linha Fortnite -->
                         <tr>
 
                             <td>Fortnite</td>
@@ -257,6 +353,7 @@ Xbox Series X / Series S
 
                         </tr>
 
+                        <!-- Linha Valorant -->
                         <tr>
 
                             <td>Valorant</td>
@@ -275,58 +372,93 @@ Xbox Series X / Series S
 
                 </section>
 
-                <!-- Conclusão -->
+                <!-- ========================= -->
+                <!-- CONCLUSÃO -->
+                <!-- ========================= -->
+
                 <section class="postit-card" id="conclusao">
 
+                    <!-- Título -->
                     <h3 class="titulo_secundario">
                         Conclusão
                     </h3>
 
+                    <!-- Texto -->
                     <p>
                         O mercado de jogos continua crescendo e atraindo
                         milhões de jogadores diariamente.
                     </p>
 
+                    <!-- Texto -->
                     <p>
                         Os games deixaram de ser apenas diversão e se tornaram
                         parte da cultura mundial.
                     </p>
+
+                    <!-- Espaçamento -->
                     <br><br>
+
                 </section>
 
+                <!-- ========================= -->
+                <!-- IMAGEM FINAL -->
+                <!-- ========================= -->
 
-                <!-- Imagem -->
                 <div class="container-imagem">
 
+                    <!-- Título da imagem -->
                     <h2 class="titulo-imagem" style="font-size: 25px; color: orangered;">
                         Um grande jogo de ação vindo com tudo em REMAKE!
                     </h2>
+
+                    <!-- Parágrafo da imagem -->
                     <p>
+
+                    <!-- Imagem principal -->
                     <img
                         class="imagemfinal"
                         src="img/GoW Remake.png"
                         alt="Imagem Final"
                     />
+
+                    <!-- Espaçamento -->
                     <br><br>
-                    <div style="font-size: 50px; color: turquoise; text-align: justify;"
-                    > Jogo nostalgico pirata voltando de uma forma mais realista que <b>nunca</b> 👇 <br><br>
+
+                    <!-- Texto estilizado -->
+                    <div style="font-size: 50px; color: turquoise; text-align: justify;">
+
+                    <!-- Texto promocional -->
+                    Jogo nostalgico pirata voltando de uma forma mais realista que <b>nunca</b> 👇
+
+                    <!-- Espaçamento -->
+                    <br><br>
+
+                    <!-- Iframe do trailer -->
                     <iframe
                         src="https://assets.ign.com/videos/mediaconvert/2026/05/20/1920/0f3f3e78-2f6b-4c97-8a56-3a7157ee4162-1779290089.mp4"
                         title="Trailer Assassin's Creed Black Flag"
                         allowfullscreen
                     >
+
                     </div>
+
+                    <!-- Fechamento do iframe -->
                     </iframe>
 
                 </div>
 
             </article>
 
-            <!-- Áudio -->
+            <!-- ========================= -->
+            <!-- ÁUDIO -->
+            <!-- ========================= -->
+
             <section class="audio-area">
 
+                <!-- Player de áudio -->
                 <audio class="audio-player" controls muted autoplay loop>
 
+                    <!-- Arquivo de áudio -->
                     <source
                         src="audio/Crash Bandicoot Main Theme.mp3"
                         type="audio/mpeg"
@@ -336,11 +468,16 @@ Xbox Series X / Series S
 
             </section>
 
-            <!-- Rodapé -->
+            <!-- ========================= -->
+            <!-- RODAPÉ -->
+            <!-- ========================= -->
+
             <footer class="rodape">
 
+                <!-- Linha horizontal -->
                 <hr />
 
+                <!-- Texto pequeno do rodapé -->
                 <small>
                     © 2026 - Games World | Jogos
                 </small>
